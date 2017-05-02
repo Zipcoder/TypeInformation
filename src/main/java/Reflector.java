@@ -10,11 +10,11 @@ public class Reflector {
 
 
         try {
-
             Class intface = Class.forName(interfaceName);
-            return (intface.isAssignableFrom(object.getClass()));
+
+            return intface.isAssignableFrom(object.getClass());
         } catch (ClassNotFoundException e) {
-            System.out.println("error");
+            System.out.println(e);
             return false;
         }
 
@@ -23,18 +23,27 @@ public class Reflector {
     public boolean classImplementsInterface(String objectName, String interfaceName) {
 
         try {
-            Class obj = Class.forName(objectName);
+            Class object = Class.forName(objectName);
             Class intface = Class.forName(interfaceName);
-            return obj.getClass().isInstance(intface.getClass());
+            return intface.isAssignableFrom(object);
         } catch (ClassNotFoundException e) {
+            System.out.println(e);
             return false;
         }
 
     }
 
- /*   public boolean classImplementsInterface(Class clASS, String InterfaceName) {
+    public boolean classImplementsInterface(Class clASS, String interfaceName) {
 
-    }*/
+        try {
+            Class intface = Class.forName(interfaceName);
+            return intface.isAssignableFrom(clASS);
+        } catch (ClassNotFoundException e){
+            System.out.println(e);
+            return false;
+        }
+
+    }
 
   /*  public String listAllMembers(Object object) {
 
