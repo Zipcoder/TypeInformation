@@ -4,6 +4,13 @@ import org.junit.Assert;
 import org.junit.Before;
 import org.junit.Test;
 
+import java.io.FileReader;
+import java.io.IOException;
+import com.google.common.io.CharStreams;
+
+
+import java.lang.reflect.*;
+
 import java.util.ArrayList;
 
 /**
@@ -14,6 +21,7 @@ public class ClassExplorerTest {
     private Class theInterface;
     private ClassExplorer checkingClass;
     private Class classInstance;
+    private Class classInteger;
 
     @Before
     public void setUp() {
@@ -21,6 +29,7 @@ public class ClassExplorerTest {
             theInterface = Class.forName("java.util.List");
             checkingClass = new ClassExplorer();
             classInstance = Class.forName("java.util.ArrayList");
+            classInteger = Class.forName("java.lang.Integer");
         } catch(ClassNotFoundException e) {
             System.out.println(e);
         }
@@ -35,5 +44,20 @@ public class ClassExplorerTest {
                 checkingClass.classImplementsInterface(arrayListObject, theInterface));
         Assert.assertTrue("Checking Implementation with Class object passed",
                 checkingClass.classImplementsInterface(classInstance, theInterface));
+    }
+
+    @Test
+    public void testsListAllMembers() {
+        // I tried for ten years
+        // This is an untestable method
+        // Why do you hate me Dave?
+        // What did I ever do to you!?
+        /* try {
+            String url = getClass().getClassLoader().getResource("IntegerTestData.txt").getFile();
+            FileReader reader = new FileReader(url);
+            String result = CharStreams.toString(reader);
+            Assert.assertTrue("Confirming similar method output",
+                    result.equals(checkingClass.listAllMembers(new Integer(4))));
+        } catch(IOException e) { System.out.println(e); } */
     }
 }

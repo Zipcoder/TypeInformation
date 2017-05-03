@@ -1,9 +1,31 @@
 package io.github.aaronclong.TypeInformation.partOne;
 
+import com.sun.xml.internal.messaging.saaj.soap.impl.FaultElementImpl;
+
+import java.lang.reflect.Constructor;
+import java.lang.reflect.Method;
+import java.lang.reflect.Field;
+import java.util.ArrayList;
+import java.util.HashMap;
+//import java.util.regex.Pattern;
+//import java.util.regex.Matcher;
+
+
 /**
  * Created by aaronlong on 5/2/17.
  */
 public class ClassExplorer<T> {
+
+    public enum ClassMetaData {
+        ACCESSOR("A "),
+        PACKAGE("P "); //Description for package
+
+        private String component;
+        ClassMetaData(String data) {
+            component = data;
+        }
+    }
+
     public ClassExplorer() {}
 
     public boolean classImplementsInterface(Object compareClass, Class<T> theInterface) {
@@ -27,5 +49,28 @@ public class ClassExplorer<T> {
         return theInterface.isAssignableFrom(compareClass);
     }
 
+    public String listAllMembers(Object obj) {
+        Class objMetaData = obj.getClass();
+        StringBuilder builder = new StringBuilder(1000);
+        Constructor[] constructors = objMetaData.getConstructors();
+        Field[] fields = objMetaData.getFields();
+        Method[] methods = objMetaData.getMethods();
+        for (Constructor constructor : constructors) {
+            append(builder, constructor.toString());
+        }
+        for (Field field : fields) {
+            append(builder, field.toString());
+        }
+        for (Method method : methods) {
+            append(builder, method.toString());
+        }
+        System.out.println(builder.toString());
+        return builder.toString();
+    }
+
+    private void append(StringBuilder builder, String stuff) {
+        builder.append(stuff);
+        builder.append("\n");
+    }
 
 }
