@@ -1,5 +1,6 @@
 package sima.cameron.unitcorn;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
@@ -20,24 +21,27 @@ public class UnitCornTestRunner {
         }
     }
 
-    public Result runTest(Method method) {
-        Result result = new Result(method);
-        return result;
+    public Result runTest(Method method) throws InvocationTargetException, IllegalAccessException {
+        Object obj = getClassInstance(method);
+
+
+        Result resultObj = new Result(method.invoke(obj));
+
+
+
+        return resultObj;
     }
 
     public String runTests(Class c) {
 
+        StringBuilder sb = new StringBuilder();
+
         Method[] methods = c.getMethods();
         ArrayList<Method> testMethods = getTestMethods(methods);
-        ArrayList<Result> results = new ArrayList<>();
 
         for (Method method : testMethods) {
-            Result result = runTest(method);
-            results.add(result);
+            sb.append(runTest(method));
         }
-
-
-
     }
 
     private ArrayList<Method> getTestMethods(Method[] methods) {
@@ -58,4 +62,17 @@ public class UnitCornTestRunner {
             return null;
         }
     }
+
+    private Object getClassInstance(Method method) {
+        try {
+            return method.getClass().newInstance();
+        } catch (InstantiationException e) {
+            return null;
+
+        } catch (IllegalAccessException e) {
+            return null;
+        }
+    }
+
+
 }

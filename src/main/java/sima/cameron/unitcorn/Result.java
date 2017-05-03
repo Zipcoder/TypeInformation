@@ -7,14 +7,14 @@ import java.lang.reflect.Method;
  */
 public class Result {
 
-    private Method method;
+    private Object object;
 
-    public Result(Method method) {
-        this.method = method;
+    public Result(Object object) {
+        this.object = object;
     }
 
-    public Method getMethod() {
-        return method;
+    public Object getMethod() {
+        return object;
     }
 
 
