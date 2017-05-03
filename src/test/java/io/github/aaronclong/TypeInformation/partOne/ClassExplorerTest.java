@@ -63,12 +63,21 @@ public class ClassExplorerTest {
 
     @Test
     public void testClassHierarchy() {
-        try {
-            String url = getClass().getClassLoader().getResource("ClassHierarchyTestData.txt").getFile();
-            FileReader reader = new FileReader(url);
-            String result = CharStreams.toString(reader);
-            Assert.assertTrue("Confirming class Hierarchy",
-                    result.equals(checkingClass.getClassHierarchy(new Integer(7))));
-        } catch(IOException e) { System.out.println(e); }
+        //try {
+            //String url = getClass().getClassLoader().getResource("ClassHierarchyTestData.txt").getFile();
+            //FileReader reader = new FileReader(url);
+            //System.out.println(url);
+            String integerClassHierarchy = "class java.lang.Object\n" +
+                    " class java.lang.Number\n" +
+                    "  class java.lang.Integer\n";
+            //String result = CharStreams.toString(reader);
+            //System.out.println(checkingClass.getClassHierarchy(new Integer(7)));
+            //System.out.println(result);
+            //System.out.print(hey.equals(checkingClass.getClassHierarchy(new Integer(7))));
+            Assert.assertEquals("Confirming class Hierarchy",
+                    integerClassHierarchy, checkingClass.getClassHierarchy(new Integer(7)));
+            //System.out.print(result);
+
+        //} catch(IOException e) { System.out.println(e); }
     }
 }

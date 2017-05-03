@@ -75,10 +75,26 @@ public class ClassExplorer<T> {
             classHierarchy.add(objClassRef.toString());
             objClassRef = objClassRef.getSuperclass();
         }
-        for (String hey : classHierarchy) {
-            System.out.println(hey);
+        return format(classHierarchy);
+    }
+
+    public String format(ArrayList<String> unformatedList) {
+        StringBuilder builder = new StringBuilder(1000);
+        int size = unformatedList.size()-1;
+        for (int i = size; i >=0; i--) {
+            int howManySpaces = size - i;
+            addSpaces(builder, howManySpaces);
+            builder.append(unformatedList.get(i));
+            builder.append("\n");
         }
-        return "";
+        //System.out.println(builder.toString());
+        return builder.toString();
+    }
+
+    private void addSpaces(StringBuilder builder, int interval) {
+        String space = " ";
+        for (int z = 0; z < interval; z++) builder.append(space);
+
     }
 
 }
