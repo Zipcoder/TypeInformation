@@ -94,7 +94,6 @@ public class ClassExplorer<T> {
     private void addSpaces(StringBuilder builder, int interval) {
         String space = " ";
         for (int z = 0; z < interval; z++) builder.append(space);
-
     }
 
 }
