@@ -1,12 +1,15 @@
 package io.github.aaronclong.TypeInformation.partOne;
 
+import com.sun.tools.javac.code.TypeAnnotations;
 import com.sun.xml.internal.messaging.saaj.soap.impl.FaultElementImpl;
 
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Field;
+import com.sun.tools.javac.code.TypeAnnotations;
 import java.util.ArrayList;
 import java.util.HashMap;
+import java.lang.annotation.Annotation;
 //import java.util.regex.Pattern;
 //import java.util.regex.Matcher;
 
@@ -15,7 +18,7 @@ import java.util.HashMap;
  * Created by aaronlong on 5/2/17.
  */
 public class ClassExplorer<T> {
-    
+
     public ClassExplorer() {}
 
     public boolean classImplementsInterface(Object compareClass, Class<T> theInterface) {
@@ -39,6 +42,8 @@ public class ClassExplorer<T> {
         return theInterface.isAssignableFrom(compareClass);
     }
 
+
+
     public String listAllMembers(Object obj) {
         Class objMetaData = obj.getClass();
         StringBuilder builder = new StringBuilder(1000);
@@ -54,13 +59,24 @@ public class ClassExplorer<T> {
         for (Method method : methods) {
             append(builder, method.toString());
         }
-        System.out.println(builder.toString());
+        //System.out.println(builder.toString());
         return builder.toString();
     }
 
     private void append(StringBuilder builder, String stuff) {
         builder.append(stuff);
         builder.append("\n");
+    }
+
+    public String getClassHierarchy(Object obj) {
+        StringBuilder classHierarchy = new StringBuilder(1000);
+        Class objClassRef = obj.getClass();
+        Annotation[] anno = objClassRef.getAnnotatedSuperclass().getAnnotations();
+        for (Annotation a : anno) {
+            System.out.println();
+        }
+        //System.out.println();
+        return "";
     }
 
 }

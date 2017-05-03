@@ -60,4 +60,9 @@ public class ClassExplorerTest {
                     result.equals(checkingClass.listAllMembers(new Integer(4))));
         } catch(IOException e) { System.out.println(e); } */
     }
+
+    @Test
+    public void testClassHeirarchy() {
+        checkingClass.getClassHierarchy(new Integer(7));
+    }
 }
