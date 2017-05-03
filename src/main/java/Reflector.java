@@ -11,7 +11,6 @@ public class Reflector {
 
     public boolean classImplementsInterface(Object object, String interfaceName) {
 
-
         try {
             Class intface = Class.forName(interfaceName);
 
@@ -20,7 +19,6 @@ public class Reflector {
             System.out.println(e);
             return false;
         }
-
     }
 
     public boolean classImplementsInterface(String objectName, String interfaceName) {
@@ -33,7 +31,6 @@ public class Reflector {
             System.out.println(e);
             return false;
         }
-
     }
 
     public boolean classImplementsInterface(Class clASS, String interfaceName) {
@@ -45,8 +42,8 @@ public class Reflector {
             System.out.println(e);
             return false;
         }
-
     }
+
     public String listAllMembers(Object object) {
 
         ArrayList<Class> classes = getClassArray(object);
@@ -56,9 +53,7 @@ public class Reflector {
             System.out.println(cls);
             sb.append(getClassMembers(cls));
         }
-
         return sb.toString();
-
     }
 
     public String getClassMembers(Class cls) {
@@ -90,14 +85,12 @@ public class Reflector {
         }
         Collections.reverse(classes);
         return classes;
-
     }
 
     public String getClassHierarchy(Object object) {
 
         ArrayList<Class> classes = getClassArray(object);
         return buildHierarchyString(classes);
-
     }
 
     private String buildHierarchyString(ArrayList classes) {
@@ -112,24 +105,23 @@ public class Reflector {
             }
             sb.append(tabs + classes.get(i) + "\n");
         }
-
         return sb.toString();
-
     }
 
 
+    public List instantiateClassHierarchy(Object object) {
 
+        ArrayList<Class> classes = getClassArray(object);
+        ArrayList<Object> instances = new ArrayList<>();
 
-
-
-
-
-
-
-
-/*    public List instantiateClassHierarchy(Object object) {
-
-    }*/
-
-
+        for (Class cls : classes) {
+            try {
+                instances.add(cls.newInstance());
+            } catch (Exception e) {
+                System.out.println(e);
+                System.out.println(cls + " can't be instantiated.");
+            }
+        }
+        return instances;
+    }
 }

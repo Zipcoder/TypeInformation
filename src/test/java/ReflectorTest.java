@@ -165,21 +165,34 @@ public class ReflectorTest {
 
     }
 
-/*    @Test
-    public void testGetInstancesFromHierarchy() {
-
+    @Test
+    public void testGetInstancesFromHierarchy_arraysAreEqual() {
         Integer i = new Integer(1);
         Object obj = new Object();
 
+        // Only Object can be instantiated in hierarchy Integer > Number > Object
         List list = new ArrayList();
-        list.add(i);
         list.add(obj);
+        Object[] expectedArr = new Object[list.size()];
 
-        Assert.assert(list, reflector.instantiateClassHierarchy(i));
+        List result = reflector.instantiateClassHierarchy(i);
+        Object[] resultArr = new Object[result.size()];
 
+        Assert.assertArrayEquals(expectedArr, resultArr);
 
-    }*/
+    }
 
+    @Test
+    public void testGetInstancesFromHierarchy_classesAreUnique() {
+        Integer i = new Integer(1);
+        List result = reflector.instantiateClassHierarchy(i);
 
+        // confirm each list item is an instance of a different class
+        Class cls = null;
+        for (Object o : result) {
+            Assert.assertTrue((o.getClass() != cls));
+            cls = o.getClass();
+        }
+    }
 
 }
