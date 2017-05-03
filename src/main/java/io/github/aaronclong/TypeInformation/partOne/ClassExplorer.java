@@ -15,17 +15,7 @@ import java.util.HashMap;
  * Created by aaronlong on 5/2/17.
  */
 public class ClassExplorer<T> {
-
-    public enum ClassMetaData {
-        ACCESSOR("A "),
-        PACKAGE("P "); //Description for package
-
-        private String component;
-        ClassMetaData(String data) {
-            component = data;
-        }
-    }
-
+    
     public ClassExplorer() {}
 
     public boolean classImplementsInterface(Object compareClass, Class<T> theInterface) {
