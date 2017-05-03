@@ -69,13 +69,15 @@ public class ClassExplorer<T> {
     }
 
     public String getClassHierarchy(Object obj) {
-        StringBuilder classHierarchy = new StringBuilder(1000);
+        ArrayList<String> classHierarchy = new ArrayList();
         Class objClassRef = obj.getClass();
-        Annotation[] anno = objClassRef.getAnnotatedSuperclass().getAnnotations();
-        for (Annotation a : anno) {
-            System.out.println();
+        while (objClassRef != null) {
+            classHierarchy.add(objClassRef.toString());
+            objClassRef = objClassRef.getSuperclass();
         }
-        //System.out.println();
+        for (String hey : classHierarchy) {
+            System.out.println(hey);
+        }
         return "";
     }
 
