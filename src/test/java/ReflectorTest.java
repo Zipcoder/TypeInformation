@@ -1,8 +1,13 @@
+import com.google.common.io.CharStreams;
 import org.junit.Assert;
 import org.junit.Before;
+import org.junit.Ignore;
 import org.junit.Test;
 
+import java.io.FileReader;
+import java.io.IOException;
 import java.util.ArrayList;
+import java.util.List;
 
 
 /**
@@ -44,8 +49,137 @@ public class ReflectorTest {
     @Test
     public void testClassImplementsInterfaceClass() {
 
-
         Assert.assertTrue(reflector.classImplementsInterface(cls, "java.util.List"));
     }
+
+    @Test
+    public void testGetClassMembers() {
+
+        Class cls = new Integer(1).getClass();
+
+        String actualValue = reflector.getClassMembers(cls);
+
+        String expectedValue = "public static final int java.lang.Integer.MIN_VALUE\n" +
+                "public static final int java.lang.Integer.MAX_VALUE\n" +
+                "public static final java.lang.Class java.lang.Integer.TYPE\n" +
+                "static final char[] java.lang.Integer.digits\n" +
+                "static final char[] java.lang.Integer.DigitTens\n" +
+                "static final char[] java.lang.Integer.DigitOnes\n" +
+                "static final int[] java.lang.Integer.sizeTable\n" +
+                "private final int java.lang.Integer.value\n" +
+                "public static final int java.lang.Integer.SIZE\n" +
+                "public static final int java.lang.Integer.BYTES\n" +
+                "private static final long java.lang.Integer.serialVersionUID\n" +
+                "public java.lang.Integer(int)\n" +
+                "public java.lang.Integer(java.lang.String) throws java.lang.NumberFormatException\n" +
+                "public static int java.lang.Integer.numberOfLeadingZeros(int)\n" +
+                "public static int java.lang.Integer.numberOfTrailingZeros(int)\n" +
+                "public static int java.lang.Integer.bitCount(int)\n" +
+                "public boolean java.lang.Integer.equals(java.lang.Object)\n" +
+                "public static java.lang.String java.lang.Integer.toString(int,int)\n" +
+                "public java.lang.String java.lang.Integer.toString()\n" +
+                "public static java.lang.String java.lang.Integer.toString(int)\n" +
+                "public static int java.lang.Integer.hashCode(int)\n" +
+                "public int java.lang.Integer.hashCode()\n" +
+                "public static int java.lang.Integer.min(int,int)\n" +
+                "public static int java.lang.Integer.max(int,int)\n" +
+                "public static int java.lang.Integer.reverseBytes(int)\n" +
+                "public int java.lang.Integer.compareTo(java.lang.Integer)\n" +
+                "public int java.lang.Integer.compareTo(java.lang.Object)\n" +
+                "public byte java.lang.Integer.byteValue()\n" +
+                "public short java.lang.Integer.shortValue()\n" +
+                "public int java.lang.Integer.intValue()\n" +
+                "public long java.lang.Integer.longValue()\n" +
+                "public float java.lang.Integer.floatValue()\n" +
+                "public double java.lang.Integer.doubleValue()\n" +
+                "public static java.lang.Integer java.lang.Integer.valueOf(int)\n" +
+                "public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String) throws java.lang.NumberFormatException\n" +
+                "public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String,int) throws java.lang.NumberFormatException\n" +
+                "public static java.lang.String java.lang.Integer.toHexString(int)\n" +
+                "static void java.lang.Integer.getChars(int,int,char[])\n" +
+                "public static java.lang.Integer java.lang.Integer.decode(java.lang.String) throws java.lang.NumberFormatException\n" +
+                "public static int java.lang.Integer.compare(int,int)\n" +
+                "public static int java.lang.Integer.reverse(int)\n" +
+                "static int java.lang.Integer.stringSize(int)\n" +
+                "public static int java.lang.Integer.sum(int,int)\n" +
+                "public static long java.lang.Integer.toUnsignedLong(int)\n" +
+                "public static int java.lang.Integer.parseInt(java.lang.String) throws java.lang.NumberFormatException\n" +
+                "public static int java.lang.Integer.parseInt(java.lang.String,int) throws java.lang.NumberFormatException\n" +
+                "public static java.lang.String java.lang.Integer.toUnsignedString(int)\n" +
+                "public static java.lang.String java.lang.Integer.toUnsignedString(int,int)\n" +
+                "public static java.lang.String java.lang.Integer.toOctalString(int)\n" +
+                "public static java.lang.String java.lang.Integer.toBinaryString(int)\n" +
+                "private static java.lang.String java.lang.Integer.toUnsignedString0(int,int)\n" +
+                "static int java.lang.Integer.formatUnsignedInt(int,int,char[],int,int)\n" +
+                "public static int java.lang.Integer.parseUnsignedInt(java.lang.String) throws java.lang.NumberFormatException\n" +
+                "public static int java.lang.Integer.parseUnsignedInt(java.lang.String,int) throws java.lang.NumberFormatException\n" +
+                "public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,int)\n" +
+                "public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String)\n" +
+                "public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,java.lang.Integer)\n" +
+                "public static int java.lang.Integer.compareUnsigned(int,int)\n" +
+                "public static int java.lang.Integer.divideUnsigned(int,int)\n" +
+                "public static int java.lang.Integer.remainderUnsigned(int,int)\n" +
+                "public static int java.lang.Integer.highestOneBit(int)\n" +
+                "public static int java.lang.Integer.lowestOneBit(int)\n" +
+                "public static int java.lang.Integer.rotateLeft(int,int)\n" +
+                "public static int java.lang.Integer.rotateRight(int,int)\n" +
+                "public static int java.lang.Integer.signum(int)\n";
+
+        Assert.assertEquals(expectedValue, actualValue);
+    }
+
+
+    @Test
+    public void testListAllMembers() {
+
+        try {
+            String url = getClass().getClassLoader().getResource("IntegerAllMembers.txt").getFile();
+            FileReader reader = new FileReader(url);
+
+            String expectedValue = CharStreams.toString(reader);
+
+            Integer i = new Integer(1);
+
+            String actualValue = reflector.listAllMembers(i);
+
+            Assert.assertEquals(expectedValue, actualValue);
+        } catch (IOException e) {
+            System.out.println(e);
+        }
+    }
+
+
+
+    @Test
+    public void testGetClassHierarchy() {
+
+        Integer i = new Integer(3);
+
+        String expectedValue = "class java.lang.Object\n" +
+                "\tclass java.lang.Number\n" +
+                "\t\tclass java.lang.Integer\n";
+
+        String actualValue = reflector.getClassHierarchy(i);
+
+        Assert.assertEquals(expectedValue, actualValue);
+
+    }
+
+/*    @Test
+    public void testGetInstancesFromHierarchy() {
+
+        Integer i = new Integer(1);
+        Object obj = new Object();
+
+        List list = new ArrayList();
+        list.add(i);
+        list.add(obj);
+
+        Assert.assert(list, reflector.instantiateClassHierarchy(i));
+
+
+    }*/
+
+
 
 }
