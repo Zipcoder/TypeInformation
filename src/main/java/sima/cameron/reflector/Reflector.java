@@ -1,4 +1,5 @@
-import javax.sound.midi.SysexMessage;
+package sima.cameron.reflector;
+
 import java.lang.reflect.*;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -46,7 +47,7 @@ public class Reflector {
 
     public String listAllMembers(Object object) {
 
-        ArrayList<Class> classes = getClassArray(object);
+        ArrayList<Class> classes = getSuperClassArray(object);
         StringBuilder sb = new StringBuilder();
 
         for (Class cls : classes) {
@@ -74,7 +75,7 @@ public class Reflector {
         return result;
     }
 
-    private ArrayList getClassArray(Object object) {
+    private ArrayList getSuperClassArray(Object object) {
 
         Class cls = object.getClass();
         ArrayList<Class> classes = new ArrayList<>();
@@ -89,7 +90,7 @@ public class Reflector {
 
     public String getClassHierarchy(Object object) {
 
-        ArrayList<Class> classes = getClassArray(object);
+        ArrayList<Class> classes = getSuperClassArray(object);
         return buildHierarchyString(classes);
     }
 
@@ -111,7 +112,7 @@ public class Reflector {
 
     public List instantiateClassHierarchy(Object object) {
 
-        ArrayList<Class> classes = getClassArray(object);
+        ArrayList<Class> classes = getSuperClassArray(object);
         ArrayList<Object> instances = new ArrayList<>();
 
         for (Class cls : classes) {

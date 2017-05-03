@@ -1,8 +1,8 @@
 import com.google.common.io.CharStreams;
 import org.junit.Assert;
 import org.junit.Before;
-import org.junit.Ignore;
 import org.junit.Test;
+import sima.cameron.reflector.Reflector;
 
 import java.io.FileReader;
 import java.io.IOException;
