@@ -5,8 +5,6 @@ import org.junit.Test;
 import sima.cameron.unitcorn.Result;
 import sima.cameron.unitcorn.UnitCornTestRunner;
 
-import static java.lang.Class.forName;
-
 /**
  * Created by cameronsima on 5/4/17.
  */
@@ -65,8 +63,7 @@ public class UnitCornTests {
         UnitCornTestRunner utr = new UnitCornTestRunner();
 
         String expectedValue = "Test passed\n" +
-                "Test failed with error: java.lang.AssertionError\n"
-                ;
+                "Test failed with error: java.lang.AssertionError\n";
         String actualValue = utr.runTests(testTestsClass);
 
         Assert.assertEquals(expectedValue, actualValue);

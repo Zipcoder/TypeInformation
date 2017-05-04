@@ -17,14 +17,11 @@ public class UnitCornTestRunner {
         Method method = getMethod(c, methodName);
         Object obj = getClassInstance(c);
         Result result = new Result();
-                try {
-                    method.invoke(obj);
-                } catch (Exception e) {
-                    result.setError(e.getCause());
-                }
+        Throwable err = catchError(method, obj);
+        result.setError(err);
         return result;
     }
-
+    
     private Method getMethod(Class c, String methodName) {
         Method[] methods = c.getMethods();
         for (Method method : methods) {
@@ -47,11 +44,16 @@ public class UnitCornTestRunner {
         return null;
     }
 
-/*    public Result runTest(Method method) throws InvocationTargetException, IllegalAccessException {
-        Object obj = getClassInstance(method);
-        return new Result(method.invoke(obj));
+    private Throwable catchError(Method method, Object obj) {
+        try {
+            method.invoke(obj);
+        } catch (Exception e) {
 
-    }*/
+            // unwrap InvocationTargetException to get to underlying error, if it exists
+            return e.getCause();
+        }
+        return null;
+    }
 
     public String runTests(Class c) {
 
