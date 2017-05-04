@@ -64,8 +64,9 @@ public class UnitCornTests {
 
         UnitCornTestRunner utr = new UnitCornTestRunner();
 
-        String expectedValue = "Test failed with error: java.lang.AssertionError\n" +
-                "Test passed\n";
+        String expectedValue = "Test passed\n" +
+                "Test failed with error: java.lang.AssertionError\n"
+                ;
         String actualValue = utr.runTests(testTestsClass);
 
         Assert.assertEquals(expectedValue, actualValue);
