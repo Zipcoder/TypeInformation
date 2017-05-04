@@ -21,6 +21,6 @@ public class Result {
 
     @Override
     public String toString(){
-        return String.format("METHOD %s IN %s %S", theMethod, theClass, result);
+        return String.format("METHOD %s IN %s %S\n", theMethod, theClass, result);
     }
 }

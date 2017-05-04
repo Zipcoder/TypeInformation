@@ -12,10 +12,10 @@ import java.util.ArrayList;
  */
 public class UnitCornTestRunner {
 
-    private ArrayList<Method> beforeList;
-    private ArrayList<Method> testList;
-    private ArrayList<Method> afterList;
-    private ArrayList<Result> allResults;
+    private Method beforeMethod;
+    private Method afterMethod;
+    private ArrayList<Method> testList = new ArrayList<Method>();
+    private ArrayList<Result> allResults = new ArrayList<Result>();
 
     public Result runTest(Class c, String method) {
         Result result = Result.makeResultInstance(c.toString(), method, "NOTRAN");
@@ -42,26 +42,27 @@ public class UnitCornTestRunner {
     }
 
     public String runTests(Class c) {
-        Object obj = makeObject(c);
         for (Method method : getUnitMethods(c)) {
-            sortMethods(method);
+            sortMethod(method);
         }
-        for (Method m : beforeList) {
+
+        for (Method test : testList) {
+            Object obj = makeObject(c);
+            if (beforeMethod != null) {
+               try { beforeMethod.invoke(obj, ""); }
+               catch(Exception e) { }
+            }
             try {
-            m.invoke(obj, "");
-          } catch (Exception e) { System.out.println(e); }
+                allResults.add(runTest(c, obj, test));
+            }
+            catch(Exception e) { }
+            if (afterMethod != null) {
+                try { afterMethod.invoke(obj, ""); }
+                catch(Exception e) { }
+            }
         }
 
-        for (Method m : testList) {
-            allResults.add(runTest(c, obj, m));
-        }
-
-        StringBuilder result = new StringBuilder(1000);
-        for (Result r : allResults) {
-            result.append(r);
-        }
-
-        return result.toString();
+        return buildResultString();
     }
 
     private String methodPassOrFail(Method m, Object o) {
@@ -77,14 +78,23 @@ public class UnitCornTestRunner {
         return c.getMethods();
     }
 
-    private void sortMethods(Method m) {
-        //if (m.isAnnotationPresent(Test.class)) testList.add(m);
-        if (m.isAnnotationPresent(Before.class)) beforeList.add(m);
-        else if (m.isAnnotationPresent(After.class)) afterList.add(m);
+    private void sortMethod(Method m) {
+        if (m.isAnnotationPresent(Test.class)) testList.add(m);
+        if (m.isAnnotationPresent(Before.class)) beforeMethod = m;
+        else if (m.isAnnotationPresent(After.class)) afterMethod = m;
     }
 
     private Object makeObject(Class cls) {
         try { return cls.newInstance(); }
         catch(Exception e) { return null; }
+    }
+
+    private String buildResultString() {
+        StringBuilder result = new StringBuilder(1000);
+        for (Result r : allResults) {
+            result.append(r);
+        }
+
+        return result.toString();
     }
 }
