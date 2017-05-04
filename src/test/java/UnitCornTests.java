@@ -67,7 +67,5 @@ public class UnitCornTests {
         String actualValue = utr.runTests(testTestsClass);
 
         Assert.assertEquals(expectedValue, actualValue);
-
-
     }
 }

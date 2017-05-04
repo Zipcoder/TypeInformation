@@ -1,10 +1,22 @@
+import org.junit.After;
 import org.junit.Assert;
+import org.junit.Before;
 import org.junit.Test;
 
 /**
  * Created by cameronsima on 5/4/17.
  */
 public class UnitCornTestRunnerTestTests {
+
+    @Before
+    public void setUp() {
+        System.out.println("Setting up. . .");
+    }
+
+    @After
+    public void tearDown() {
+        System.out.println("Tearing down. . .");
+    }
 
     @Test
     public void testThatPasses() {

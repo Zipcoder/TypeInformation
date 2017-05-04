@@ -19,6 +19,7 @@ public class Result {
 
 
     public String getResult() {
+
         String resultString;
         if (error != null) {
             resultString = "Test failed with error: " + error.toString();
