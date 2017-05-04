@@ -12,7 +12,9 @@ public class UnitCornTestRunnerTest {
         try {
             Class stubUnitTest = Class.forName("io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest");
             UnitCornTestRunner unitCorn = new UnitCornTestRunner();
-           Assert.assertEquals("FAIL", unitCorn.runTest(stubUnitTest, "failBecauseOfBoolean"));
+           Assert.assertEquals(
+                   "METHOD failBecauseOfBoolean IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL",
+                   unitCorn.runTest(stubUnitTest, "failBecauseOfBoolean").toString());
         } catch (Exception e) {
             Assert.fail("Method test fail " + e.getMessage());
         }

@@ -8,13 +8,16 @@ import java.lang.reflect.InvocationTargetException;
  * Created by aaronlong on 5/4/17.
  */
 public class UnitCornTestRunner {
-    public String runTest(Class c, String method) {
-        String result = "";
+    public Result runTest(Class c, String method) {
+        Result result = Result.makeResultInstance(c.toString(), method, "NOTRAN");
         try {
             Method m = c.getMethod(method);
             Object o = c.newInstance();
-            result = methodPassOrFail(m, o);
-        } catch(Exception e) { }
+            String passOrFail = methodPassOrFail(m, o);
+            result = Result.makeResultInstance(c.toString(), method, passOrFail);
+        } catch(Exception e) {
+            Result.makeResultInstance(c.toString(), method, "FAIL");
+        }
         return result;
     }
 
