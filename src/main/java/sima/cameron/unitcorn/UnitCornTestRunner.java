@@ -61,9 +61,7 @@ public class UnitCornTestRunner {
     public String runTests(Class c) {
 
         StringBuilder sb = new StringBuilder();
-
         Method[] methods = c.getDeclaredMethods();
-
         ArrayList<Method> testMethods = getAnnotatedMethods(methods, Test.class);
 
         for (Method method : testMethods) {
