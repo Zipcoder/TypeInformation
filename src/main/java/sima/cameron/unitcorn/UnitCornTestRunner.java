@@ -67,13 +67,9 @@ public class UnitCornTestRunner {
         ArrayList<Method> testMethods = getAnnotatedMethods(methods, Test.class);
 
         for (Method method : testMethods) {
-
             runBeforeMethods(methods, c);
-
             Result result = runTest(c, method.toString());
-
             runAfterMethods(methods, c);
-
             sb.append(result.getResult() + "\n");
         }
         return sb.toString();
@@ -95,7 +91,10 @@ public class UnitCornTestRunner {
         for (Method method : methods) {
             Object obj = getClassInstance(c);
             Throwable err = catchError(method, obj);
-            System.out.println(err);
+            if (err != null){
+                System.out.println(err);
+            }
+
         }
     }
 
