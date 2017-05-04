@@ -31,7 +31,7 @@ public class UnitCornTestRunner {
     }
 
     public Result runTest(Class cls, Object obj, Method method) {
-        Result result = Result.makeResultInstance(cls.toString(), method.toString(), "NOTRAN");
+        Result result;
         try {
             String passOrFail = methodPassOrFail(method, obj);
             result = Result.makeResultInstance(cls.toString(), method.toString(), passOrFail);
@@ -62,7 +62,7 @@ public class UnitCornTestRunner {
 
     private boolean simpleMethodInvoke(Method theMethod, Object theObject) {
         try {
-            theMethod.invoke(theObject, "");
+            theMethod.invoke(theObject);
             return true;
         }
         catch(InvocationTargetException | IllegalAccessException e) {
@@ -72,7 +72,6 @@ public class UnitCornTestRunner {
 
     private String methodPassOrFail(Method m, Object o) {
         boolean wasMade = simpleMethodInvoke(m, o);
-        System.out.println(wasMade);
         String methodResult = "FAIL";
         if (wasMade) {
             methodResult = "PASS";
