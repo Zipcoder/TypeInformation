@@ -7,15 +7,25 @@ import java.lang.reflect.Method;
  */
 public class Result {
 
-    private Object object;
+    private Object error;
 
-    public Result(Object object) {
-        this.object = object;
+    public Result() {
+        error = null;
     }
 
-    public Object getMethod() {
-        return object;
+    public void setError(Object object) {
+        this.error = object;
     }
 
+
+    public String getResult() {
+        String resultString;
+        if (error != null) {
+            resultString = "Test failed with error: " + error.toString();
+        } else {
+            resultString = "Test passed";
+        }
+        return resultString;
+    }
 
 }

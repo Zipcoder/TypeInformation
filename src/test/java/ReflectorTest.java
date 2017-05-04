@@ -36,7 +36,6 @@ public class ReflectorTest {
     public void testClassImplementsInterfaceObject() {
 
         ArrayList<Integer> arrayList= new ArrayList<>();
-
         Assert.assertTrue(reflector.classImplementsInterface(arrayList, "java.util.List"));
     }
 
