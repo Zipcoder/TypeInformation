@@ -10,6 +10,7 @@ import java.lang.reflect.Modifier;
 public class PartOne {
     private final String newLine = "\n";
     private final String space = " ";
+
     public boolean classImplementsInterface(Class<?> aClass, String interfaceName) {
         boolean isImplemented = false;
         Class[] interfaces = aClass.getInterfaces();
@@ -21,7 +22,8 @@ public class PartOne {
         }
         return isImplemented;
     }
-    public String listAllMembers(Object o){
+
+    public String listAllMembers(Object o) {
         StringBuilder sb = new StringBuilder();
         String list;
         String fieldList;
@@ -30,17 +32,22 @@ public class PartOne {
         fieldList = listFields(o);
         methodList = listMethods(o);
         constructorList = listConstructors(o);
+        sb.append("Fields:\n");
         sb.append(fieldList);
+        sb.append("Methods:\n");
+
         sb.append(methodList);
+        sb.append("Constructors:\n");
+
         sb.append(constructorList);
         list = sb.toString();
         return list;
     }
 
-    private String listFields(Object o){
+    private String listFields(Object o) {
         StringBuilder sb = new StringBuilder();
         Field[] fields = o.getClass().getDeclaredFields();
-        for(Field field: fields){
+        for (Field field : fields) {
             sb.append(Modifier.toString(field.getModifiers()));
             sb.append(space);
             sb.append(field.getName());
@@ -49,11 +56,11 @@ public class PartOne {
         return sb.toString();
     }
 
-    private String listMethods(Object o){
+    private String listMethods(Object o) {
         StringBuilder sb = new StringBuilder();
 
         Method[] methods = o.getClass().getMethods();
-        for(Method method: methods){
+        for (Method method : methods) {
             sb.append(Modifier.toString(method.getModifiers()));
             sb.append(space);
             sb.append(method.getName());
@@ -62,11 +69,11 @@ public class PartOne {
         return sb.toString();
     }
 
-    private String listConstructors(Object o){
+    private String listConstructors(Object o) {
         StringBuilder sb = new StringBuilder();
 
         Constructor<?>[] constructors = o.getClass().getConstructors();
-        for(Constructor constructor: constructors){
+        for (Constructor constructor : constructors) {
             sb.append(Modifier.toString(constructor.getModifiers()));
             sb.append(space);
             sb.append(constructor.getName());
