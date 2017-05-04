@@ -4,7 +4,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.math.BigDecimal;
-import java.lang.reflect.*;
+import java.util.Arrays;
+
 public class AppTest {
 
     @Test
@@ -56,6 +57,26 @@ public class AppTest {
 
             //Then:
             Assert.assertTrue(actualOutput);
+
+    }
+
+    @Test
+    public void testListAllMembersMethods() {
+
+        //Given:
+
+        ListsAllMembers app = new ListsAllMembers();
+        Integer specialInteger = 100;
+        Class classIn = specialInteger.getClass();
+        Object[] methods = classIn.getMethods();
+        double expectedOutput = 61;
+
+
+        //When:
+        double actualOutput = app.listAllMembers(classIn);
+
+        //Then:
+        Assert.assertEquals(expectedOutput, actualOutput, 0.1);
 
     }
 
