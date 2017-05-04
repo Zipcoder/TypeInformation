@@ -2,6 +2,7 @@ package io.github.aaronclong.TypeInformation.UnitCorn;
 
 import java.lang.annotation.Annotation;
 import java.lang.reflect.Method;
+import java.lang.reflect.InvocationTargetException;
 
 /**
  * Created by aaronlong on 5/4/17.
@@ -12,14 +13,18 @@ public class UnitCornTestRunner {
         try {
             Method m = c.getMethod(method);
             Object o = c.newInstance();
-            result = m.invoke(o).toString();
-            System.out.println(result);
-        } catch(Exception e) {
-            result = "";
-            System.out.println(e);
-            e.getCause().printStackTrace();
-        }
+            result = methodPassOrFail(m, o);
+        } catch(Exception e) { }
         return result;
+    }
+
+    private String methodPassOrFail(Method m, Object o) {
+        String methodResult = "PASS";
+        try { m.invoke(o); }
+        catch(InvocationTargetException | IllegalAccessException e) {
+            methodResult = "FAIL";
+        }
+        return methodResult;
     }
 
     private Method[] getUnitMethods(Class c) {

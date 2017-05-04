@@ -9,8 +9,7 @@ import org.junit.Assert;
 
 public class StubUnitTest {
     @Test
-    public boolean failBecauseOfBoolean() {
-        Assert.assertTrue("Fake Boolean Test", true);
-        return true;
+    public void failBecauseOfBoolean() {
+        Assert.assertTrue("Fake Boolean Test", false);
     }
 }
