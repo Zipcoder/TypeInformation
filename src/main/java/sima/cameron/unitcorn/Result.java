@@ -17,7 +17,6 @@ public class Result {
         this.error = object;
     }
 
-
     public String getResult() {
 
         String resultString;
@@ -28,5 +27,4 @@ public class Result {
         }
         return resultString;
     }
-
 }

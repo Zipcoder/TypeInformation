@@ -28,7 +28,6 @@ public class UnitCornTests {
         } catch (ClassNotFoundException e) {
             System.out.println("Test Class not found");
         }
-
     }
 
     @Test
@@ -41,7 +40,6 @@ public class UnitCornTests {
         String actualValue = result.getResult();
 
         Assert.assertEquals(expectedValue, actualValue);
-
     }
 
     @Test
@@ -54,7 +52,6 @@ public class UnitCornTests {
         String actualValue = result.getResult();
 
         Assert.assertEquals(expectedValue, actualValue);
-
     }
 
     @Test

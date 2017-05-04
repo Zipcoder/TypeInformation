@@ -92,7 +92,6 @@ public class UnitCornTestRunner {
             if (err != null){
                 System.out.println(err);
             }
-
         }
     }
 
@@ -106,5 +105,4 @@ public class UnitCornTestRunner {
         }
         return methodsArr;
     }
-
 }
