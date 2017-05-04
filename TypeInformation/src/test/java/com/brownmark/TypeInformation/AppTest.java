@@ -80,4 +80,22 @@ public class AppTest {
 
     }
 
+    @Test
+    public void testGetClassHierarchy() {
+
+        //Given:
+
+        ClassHierarchy hierarchy = new ClassHierarchy();
+        Integer specialInteger = 100;
+        double expectedOutput = 3;
+
+
+        //When:
+        double actualOutput = hierarchy.getClassHierarchy(specialInteger);
+
+        //Then:
+        Assert.assertEquals(expectedOutput, actualOutput, 0.1);
+
+    }
+
 }

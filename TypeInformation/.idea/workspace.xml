@@ -27,13 +27,25 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="AppTest.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/com/brownmark/TypeInformation/AppTest.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="620">
-              <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+            <state relative-caret-position="239">
+              <caret line="87" column="55" lean-forward="false" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ClassHierarchy.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/ClassHierarchy.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
+              <folding>
+                <element signature="e#289#297#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -52,7 +64,7 @@
       <file leaf-file-name="classImplementsInterfaceApp.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/classImplementsInterfaceApp.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="449">
+            <state relative-caret-position="630">
               <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
               <folding />
             </state>
@@ -62,8 +74,8 @@
       <file leaf-file-name="ListsAllMembers.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/ListsAllMembers.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="255">
-              <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+            <state relative-caret-position="30">
+              <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
               <folding />
             </state>
           </provider>
@@ -92,6 +104,7 @@
         <option value="$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/classImplementsInterfaceApp.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/ListsAllMembers.java" />
         <option value="$PROJECT_DIR$/src/test/java/com/brownmark/TypeInformation/AppTest.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/ClassHierarchy.java" />
       </list>
     </option>
   </component>
@@ -109,10 +122,10 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="-118" />
-    <option name="y" value="-1047" />
-    <option name="width" value="1773" />
-    <option name="height" value="951" />
+    <option name="x" value="8" />
+    <option name="y" value="23" />
+    <option name="width" value="1271" />
+    <option name="height" value="714" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -234,33 +247,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.AppTest.testListAllMembersMethods">
-    <configuration default="false" name="AppTest.testThatClassImplementsInterfaceIfInputIsObject" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="com.brownmark.TypeInformation.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TypeInformation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="com.brownmark.TypeInformation" />
-      <option name="MAIN_CLASS_NAME" value="com.brownmark.TypeInformation.AppTest" />
-      <option name="METHOD_NAME" value="testThatClassImplementsInterfaceIfInputIsObject" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.AppTest.testGetClassHierarchy">
     <configuration default="false" name="AppTest.testThatClassImplementsInterfaceIfInputIsString" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -352,6 +339,32 @@
       <option name="PACKAGE_NAME" value="com.brownmark.TypeInformation" />
       <option name="MAIN_CLASS_NAME" value="com.brownmark.TypeInformation.AppTest" />
       <option name="METHOD_NAME" value="testListAllMembersMethods" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="AppTest.testGetClassHierarchy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="com.brownmark.TypeInformation.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeInformation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="com.brownmark.TypeInformation" />
+      <option name="MAIN_CLASS_NAME" value="com.brownmark.TypeInformation.AppTest" />
+      <option name="METHOD_NAME" value="testGetClassHierarchy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -746,19 +759,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsObject" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsString" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembers" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembersMethods" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsString" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembers" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembersMethods" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.testGetClassHierarchy" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembersMethods" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembers" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsString" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsObject" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.AppTest.testGetClassHierarchy" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembersMethods" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.AppTest.testListAllMembers" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.AppTest.testThatClassImplementsInterfaceIfInputIsString" />
       </list>
     </recent_temporary>
   </component>
@@ -773,47 +786,47 @@
       <option name="presentableId" value="Default" />
       <updated>1493916375100</updated>
       <workItem from="1493916380660" duration="1476000" />
-      <workItem from="1493917896182" duration="9001000" />
+      <workItem from="1493917896182" duration="17477000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="AppTest_testListAllMembers - 2017.05.04 at 15h 36m 01s.xml">
-      <configuration name="AppTest.testListAllMembers" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 18h 58m 37s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testListAllMembers - 2017.05.04 at 15h 36m 35s.xml">
-      <configuration name="AppTest.testListAllMembers" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 18h 58m 56s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testListAllMembers - 2017.05.04 at 15h 38m 30s.xml">
-      <configuration name="AppTest.testListAllMembers" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 18h 59m 07s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testListAllMembersMethods - 2017.05.04 at 15h 51m 42s.xml">
-      <configuration name="AppTest.testListAllMembersMethods" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 18h 59m 21s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testListAllMembersMethods - 2017.05.04 at 15h 51m 55s.xml">
-      <configuration name="AppTest.testListAllMembersMethods" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 18h 59m 37s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testListAllMembersMethods - 2017.05.04 at 15h 52m 02s.xml">
-      <configuration name="AppTest.testListAllMembersMethods" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 19h 00m 17s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testThatClassImplementsInterfaceIfInputIsClassObject - 2017.05.04 at 15h 12m 31s.xml">
-      <configuration name="AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 19h 02m 14s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testThatClassImplementsInterfaceIfInputIsClassObject - 2017.05.04 at 15h 13m 24s.xml">
-      <configuration name="AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 19h 02m 55s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testThatClassImplementsInterfaceIfInputIsClassObject - 2017.05.04 at 15h 13m 39s.xml">
-      <configuration name="AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 19h 09m 31s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="AppTest_testThatClassImplementsInterfaceIfInputIsClassObject - 2017.05.04 at 15h 13m 47s.xml">
-      <configuration name="AppTest.testThatClassImplementsInterfaceIfInputIsClassObject" configurationId="JUnit" />
+    <history-entry file="AppTest_testGetClassHierarchy - 2017.05.04 at 19h 17m 38s.xml">
+      <configuration name="AppTest.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="10477000" />
+    <option name="totallyTimeSpent" value="18953000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-118" y="-1047" width="1773" height="951" extended-state="0" />
+    <frame x="8" y="23" width="1271" height="714" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -825,14 +838,15 @@
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32993197" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4511628" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.17879301" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24940991" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -844,7 +858,6 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -898,28 +911,38 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/classImplementsInterfaceApp.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/com/brownmark/TypeInformation/AppTest.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="449">
-          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
-          <folding />
+        <state relative-caret-position="239">
+          <caret line="87" column="55" lean-forward="false" selection-start-line="87" selection-start-column="55" selection-end-line="87" selection-end-column="55" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/ListsAllMembers.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="255">
-          <caret line="17" column="0" lean-forward="false" selection-start-line="17" selection-start-column="0" selection-end-line="17" selection-end-column="0" />
+        <state relative-caret-position="30">
+          <caret line="2" column="13" lean-forward="false" selection-start-line="2" selection-start-column="13" selection-end-line="2" selection-end-column="13" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/com/brownmark/TypeInformation/AppTest.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/classImplementsInterfaceApp.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="620">
-          <caret line="75" column="34" lean-forward="false" selection-start-line="75" selection-start-column="34" selection-end-line="75" selection-end-column="34" />
+        <state relative-caret-position="630">
+          <caret line="42" column="1" lean-forward="true" selection-start-line="42" selection-start-column="1" selection-end-line="42" selection-end-column="1" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/brownmark/TypeInformation/ClassHierarchy.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="1" lean-forward="false" selection-start-line="17" selection-start-column="1" selection-end-line="17" selection-end-column="1" />
           <folding>
-            <element signature="imports" expanded="true" />
+            <element signature="e#289#297#0" expanded="true" />
           </folding>
         </state>
       </provider>
