@@ -1,0 +1,2 @@
+METHOD failBecauseOfBoolean IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL
+METHOD passStringEquality IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest PASS

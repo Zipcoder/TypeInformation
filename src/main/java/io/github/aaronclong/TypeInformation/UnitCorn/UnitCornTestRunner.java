@@ -1,13 +1,20 @@
 package io.github.aaronclong.TypeInformation.UnitCorn;
 
-import java.lang.annotation.Annotation;
+import org.junit.Before;
+import org.junit.Test;
+import org.junit.After;
 import java.lang.reflect.Method;
 import java.lang.reflect.InvocationTargetException;
+import java.util.ArrayList;
 
 /**
  * Created by aaronlong on 5/4/17.
  */
 public class UnitCornTestRunner {
+
+    private ArrayList<Method> beforeList;
+    private ArrayList<Method> testList;
+
     public Result runTest(Class c, String method) {
         Result result = Result.makeResultInstance(c.toString(), method, "NOTRAN");
         try {
@@ -19,6 +26,13 @@ public class UnitCornTestRunner {
             Result.makeResultInstance(c.toString(), method, "FAIL");
         }
         return result;
+    }
+
+    public String runTests(Class c) {
+        for (Method method : getUnitMethods(c)) {
+            sortMethods(method);
+        }
+        return "";
     }
 
     private String methodPassOrFail(Method m, Object o) {
@@ -34,7 +48,9 @@ public class UnitCornTestRunner {
         return c.getMethods();
     }
 
-    private Annotation[] getMethodAnnotation(Method m) {
-        return m.getDeclaredAnnotations();
+    private void sortMethods(Method m) {
+        if (m.isAnnotationPresent(Test.class)) testList.add(m);
+        else if (m.isAnnotationPresent(Before.class)) beforeList.add(m);
+        else if (m.isAnnotationPresent(After.class)) beforeList.add(m);
     }
 }
