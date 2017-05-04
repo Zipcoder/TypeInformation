@@ -39,7 +39,6 @@ public class UnitCornTestRunnerTest {
             String url = getClass().getClassLoader().getResource("runTestPrettyPrint.txt").getFile();
             FileReader reader = new FileReader(url);
             String result = CharStreams.toString(reader);
-            //System.out.println(result);
             System.out.println(unitCorn.runTests(stubUnitTest));
             Assert.assertEquals("Confirming pretty log of test runner",
                     result, unitCorn.runTests(stubUnitTest));

@@ -36,7 +36,7 @@ public class UnitCornTestRunner {
             String passOrFail = methodPassOrFail(method, obj);
             result = Result.makeResultInstance(cls.toString(), method.toString(), passOrFail);
         } catch(Exception e) {
-            Result.makeResultInstance(cls.toString(), method.toString(), "FAIL");
+            result = Result.makeResultInstance(cls.toString(), method.toString(), "FAIL");
         }
         return result;
     }
@@ -49,27 +49,33 @@ public class UnitCornTestRunner {
         for (Method test : testList) {
             Object obj = makeObject(c);
             if (beforeMethod != null) {
-               try { beforeMethod.invoke(obj, ""); }
-               catch(Exception e) { }
+               simpleMethodInvoke(test, obj);
             }
-            try {
-                allResults.add(runTest(c, obj, test));
-            }
-            catch(Exception e) { }
+            allResults.add(runTest(c, obj, test));
             if (afterMethod != null) {
-                try { afterMethod.invoke(obj, ""); }
-                catch(Exception e) { }
+                simpleMethodInvoke(test, obj);
             }
         }
 
         return buildResultString();
     }
 
-    private String methodPassOrFail(Method m, Object o) {
-        String methodResult = "PASS";
-        try { m.invoke(o); }
+    private boolean simpleMethodInvoke(Method theMethod, Object theObject) {
+        try {
+            theMethod.invoke(theObject, "");
+            return true;
+        }
         catch(InvocationTargetException | IllegalAccessException e) {
-            methodResult = "FAIL";
+            return false;
+        }
+    }
+
+    private String methodPassOrFail(Method m, Object o) {
+        boolean wasMade = simpleMethodInvoke(m, o);
+        System.out.println(wasMade);
+        String methodResult = "FAIL";
+        if (wasMade) {
+            methodResult = "PASS";
         }
         return methodResult;
     }
