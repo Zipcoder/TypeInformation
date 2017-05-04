@@ -78,8 +78,8 @@ public class UnitCornTestRunner {
     }
 
     private void sortMethods(Method m) {
-        if (m.isAnnotationPresent(Test.class)) testList.add(m);
-        else if (m.isAnnotationPresent(Before.class)) beforeList.add(m);
+        //if (m.isAnnotationPresent(Test.class)) testList.add(m);
+        if (m.isAnnotationPresent(Before.class)) beforeList.add(m);
         else if (m.isAnnotationPresent(After.class)) afterList.add(m);
     }
 
