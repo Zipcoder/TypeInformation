@@ -10,6 +10,7 @@ import com.google.common.io.CharStreams;
 
 
 import java.lang.reflect.*;
+import java.util.List;
 
 import java.util.ArrayList;
 
@@ -48,36 +49,28 @@ public class ClassExplorerTest {
 
     @Test
     public void testsListAllMembers() {
-        // I tried for ten years
-        // This is an untestable method
-        // Why do you hate me Dave?
-        // What did I ever do to you!?
-        /* try {
+
+        try {
             String url = getClass().getClassLoader().getResource("IntegerTestData.txt").getFile();
             FileReader reader = new FileReader(url);
             String result = CharStreams.toString(reader);
             Assert.assertTrue("Confirming similar method output",
-                    result.equals(checkingClass.listAllMembers(new Integer(4))));
-        } catch(IOException e) { System.out.println(e); } */
+                    result.equals(checkingClass.listAllMembers(new Integer(7))));
+        } catch(IOException e) { System.out.println(e); }
     }
 
     @Test
     public void testClassHierarchy() {
-        //try {
-            //String url = getClass().getClassLoader().getResource("ClassHierarchyTestData.txt").getFile();
-            //FileReader reader = new FileReader(url);
-            //System.out.println(url);
-            String integerClassHierarchy = "class java.lang.Object\n" +
+        String integerClassHierarchy = "class java.lang.Object\n" +
                     " class java.lang.Number\n" +
                     "  class java.lang.Integer\n";
-            //String result = CharStreams.toString(reader);
-            //System.out.println(checkingClass.getClassHierarchy(new Integer(7)));
-            //System.out.println(result);
-            //System.out.print(hey.equals(checkingClass.getClassHierarchy(new Integer(7))));
-            Assert.assertEquals("Confirming class Hierarchy",
+        Assert.assertEquals("Confirming class Hierarchy",
                     integerClassHierarchy, checkingClass.getClassHierarchy(new Integer(7)));
-            //System.out.print(result);
+    }
 
-        //} catch(IOException e) { System.out.println(e); }
+    @Test
+    public void testInstantiateClassHierarchy() {
+        List istantiatedClass = checkingClass.instantiateClassHierarchy(new Integer(9));
+        Assert.assertEquals("Confirming quantity of instantiated classes", 1, istantiatedClass.size());
     }
 }

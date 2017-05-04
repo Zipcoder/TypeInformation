@@ -1,18 +1,10 @@
 package io.github.aaronclong.TypeInformation.partOne;
 
-import com.sun.tools.javac.code.TypeAnnotations;
-import com.sun.xml.internal.messaging.saaj.soap.impl.FaultElementImpl;
-
 import java.lang.reflect.Constructor;
 import java.lang.reflect.Method;
 import java.lang.reflect.Field;
-import com.sun.tools.javac.code.TypeAnnotations;
 import java.util.ArrayList;
-import java.util.HashMap;
-import java.lang.annotation.Annotation;
-//import java.util.regex.Pattern;
-//import java.util.regex.Matcher;
-
+import java.util.List;
 
 /**
  * Created by aaronlong on 5/2/17.
@@ -87,13 +79,31 @@ public class ClassExplorer<T> {
             builder.append(unformatedList.get(i));
             builder.append("\n");
         }
-        //System.out.println(builder.toString());
         return builder.toString();
     }
 
     private void addSpaces(StringBuilder builder, int interval) {
         String space = " ";
         for (int z = 0; z < interval; z++) builder.append(space);
+    }
+
+    public List instantiateClassHierarchy(Object obj) {
+        ArrayList<Object> objectNeutralArray = new ArrayList<Object>();
+        Class objReference = obj.getClass();
+        while (objReference != null) {
+            Class nextLevel = objReference.getSuperclass();
+            Object tmp = makeClass(nextLevel);
+            if (tmp != null) objectNeutralArray.add(tmp);
+            objReference = nextLevel;
+        }
+        return objectNeutralArray;
+    }
+
+    private Object makeClass(Class c) {
+        try {
+            return c.newInstance();
+        } catch (Exception e) {}
+        return null;
     }
 
 }
