@@ -1,13 +1,18 @@
 package kim.christopher;
 
 import java.util.ArrayList;
+import java.lang.Class;
 
 public class ClassInspector {
 
 
-    //Take two arguments: 1) a class, speicfied by an object, Class object, or class name, and 2) an interface name.
+    //Take two arguments: 1) a class, specified by an object, Class object, or class name, and 2) an interface name.
     // Return true if the specified class implements the specified interface
     public boolean classImplementsInterface(Class c, String s){
+        Class<?>[] interfaceArray = c.getInterfaces();
+        for(Class i: interfaceArray){
+            if (i.getSimpleName().equals(s)) return true;
+        }
         return false;
     }
 
@@ -17,7 +22,6 @@ public class ClassInspector {
     //Within each class, members should be listed in the order: Fields, Constructors, Methods
     //Each group of members (fields, constructors, or methods) should be listed alphabetically
     //The first line should start with the members declared by the given object type; the last line should be the last method defined by Object
-
     public String listAllMembers(){
         return "";
     }
