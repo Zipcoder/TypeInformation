@@ -1,0 +1,86 @@
+public java.lang.Object()
+protected void java.lang.Object.finalize() throws java.lang.Throwable
+public final void java.lang.Object.wait(long,int) throws java.lang.InterruptedException
+public final native void java.lang.Object.wait(long) throws java.lang.InterruptedException
+public final void java.lang.Object.wait() throws java.lang.InterruptedException
+public boolean java.lang.Object.equals(java.lang.Object)
+public java.lang.String java.lang.Object.toString()
+public native int java.lang.Object.hashCode()
+public final native java.lang.Class java.lang.Object.getClass()
+protected native java.lang.Object java.lang.Object.clone() throws java.lang.CloneNotSupportedException
+private static native void java.lang.Object.registerNatives()
+public final native void java.lang.Object.notify()
+public final native void java.lang.Object.notifyAll()
+private static final long java.lang.Number.serialVersionUID
+public java.lang.Number()
+public byte java.lang.Number.byteValue()
+public short java.lang.Number.shortValue()
+public abstract int java.lang.Number.intValue()
+public abstract long java.lang.Number.longValue()
+public abstract float java.lang.Number.floatValue()
+public abstract double java.lang.Number.doubleValue()
+public static final int java.lang.Integer.MIN_VALUE
+public static final int java.lang.Integer.MAX_VALUE
+public static final java.lang.Class java.lang.Integer.TYPE
+static final char[] java.lang.Integer.digits
+static final char[] java.lang.Integer.DigitTens
+static final char[] java.lang.Integer.DigitOnes
+static final int[] java.lang.Integer.sizeTable
+private final int java.lang.Integer.value
+public static final int java.lang.Integer.SIZE
+public static final int java.lang.Integer.BYTES
+private static final long java.lang.Integer.serialVersionUID
+public java.lang.Integer(int)
+public java.lang.Integer(java.lang.String) throws java.lang.NumberFormatException
+public static int java.lang.Integer.numberOfLeadingZeros(int)
+public static int java.lang.Integer.numberOfTrailingZeros(int)
+public static int java.lang.Integer.bitCount(int)
+public boolean java.lang.Integer.equals(java.lang.Object)
+public static java.lang.String java.lang.Integer.toString(int,int)
+public java.lang.String java.lang.Integer.toString()
+public static java.lang.String java.lang.Integer.toString(int)
+public static int java.lang.Integer.hashCode(int)
+public int java.lang.Integer.hashCode()
+public static int java.lang.Integer.min(int,int)
+public static int java.lang.Integer.max(int,int)
+public static int java.lang.Integer.reverseBytes(int)
+public int java.lang.Integer.compareTo(java.lang.Integer)
+public int java.lang.Integer.compareTo(java.lang.Object)
+public byte java.lang.Integer.byteValue()
+public short java.lang.Integer.shortValue()
+public int java.lang.Integer.intValue()
+public long java.lang.Integer.longValue()
+public float java.lang.Integer.floatValue()
+public double java.lang.Integer.doubleValue()
+public static java.lang.Integer java.lang.Integer.valueOf(int)
+public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String) throws java.lang.NumberFormatException
+public static java.lang.Integer java.lang.Integer.valueOf(java.lang.String,int) throws java.lang.NumberFormatException
+public static java.lang.String java.lang.Integer.toHexString(int)
+static void java.lang.Integer.getChars(int,int,char[])
+public static java.lang.Integer java.lang.Integer.decode(java.lang.String) throws java.lang.NumberFormatException
+public static int java.lang.Integer.compare(int,int)
+public static int java.lang.Integer.reverse(int)
+static int java.lang.Integer.stringSize(int)
+public static int java.lang.Integer.sum(int,int)
+public static long java.lang.Integer.toUnsignedLong(int)
+public static int java.lang.Integer.parseInt(java.lang.String) throws java.lang.NumberFormatException
+public static int java.lang.Integer.parseInt(java.lang.String,int) throws java.lang.NumberFormatException
+public static java.lang.String java.lang.Integer.toUnsignedString(int)
+public static java.lang.String java.lang.Integer.toUnsignedString(int,int)
+public static java.lang.String java.lang.Integer.toOctalString(int)
+public static java.lang.String java.lang.Integer.toBinaryString(int)
+private static java.lang.String java.lang.Integer.toUnsignedString0(int,int)
+static int java.lang.Integer.formatUnsignedInt(int,int,char[],int,int)
+public static int java.lang.Integer.parseUnsignedInt(java.lang.String) throws java.lang.NumberFormatException
+public static int java.lang.Integer.parseUnsignedInt(java.lang.String,int) throws java.lang.NumberFormatException
+public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,int)
+public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String)
+public static java.lang.Integer java.lang.Integer.getInteger(java.lang.String,java.lang.Integer)
+public static int java.lang.Integer.compareUnsigned(int,int)
+public static int java.lang.Integer.divideUnsigned(int,int)
+public static int java.lang.Integer.remainderUnsigned(int,int)
+public static int java.lang.Integer.highestOneBit(int)
+public static int java.lang.Integer.lowestOneBit(int)
+public static int java.lang.Integer.rotateLeft(int,int)
+public static int java.lang.Integer.rotateRight(int,int)
+public static int java.lang.Integer.signum(int)
