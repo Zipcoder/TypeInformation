@@ -10,8 +10,14 @@ public class UnitCornTestRunner {
         return new Result();
     }
 
+    //used in runTest
     public Method getMethod(Class c, String methodName){
-        return Double.class.getMethods()[1];
+        Method[] methods = c.getMethods();
+        for(Method method: methods){
+            if(methodName.toString().equals(method.getName()))
+                return method;
+        }
+        return null;
     }
 
     public String runTests(Class c){
