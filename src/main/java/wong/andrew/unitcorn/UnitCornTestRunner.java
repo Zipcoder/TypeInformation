@@ -7,17 +7,28 @@ import java.lang.reflect.Method;
  * Created by andrewwong on 5/5/17.
  */
 public class UnitCornTestRunner {
-    public Result runTest(Class c, String methodName){
+
+//    public String runTests(Class testClass){
+//
+//    }
+    public Result runTest(Class testClass, String methodName){
         Result result = new Result();
-        Method method = getMethod(c, methodName);
+        Method method = getMethod(testClass, methodName);
         try{
-            method.invoke(new UnitCornTestRunner());
+            method.invoke(testClass.newInstance());
+            result.setTestHasPassed(true);
+        }
+        catch(InstantiationException e){
+            result.addToExceptionList(e);
         }
         catch(IllegalAccessException e){
-            System.out.println(e);
+            result.addToExceptionList(e);
         }
         catch(InvocationTargetException e){
-            System.out.println(e);
+            result.addToExceptionList(e);
+        }
+        catch (NullPointerException e){
+            result.addToExceptionList(e);
         }
         return result;
     }

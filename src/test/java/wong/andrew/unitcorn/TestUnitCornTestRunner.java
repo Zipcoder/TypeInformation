@@ -16,19 +16,37 @@ public class TestUnitCornTestRunner {
 //        UnitCornTestRunner unitCorn = new UnitCornTestRunner();
 //    }
     @Test
-    public void runTest_TestingPartOneListAllMembers_ResultReturned(){
+    public void runTest_RunDummyMethodTest_CorrectResultReturned(){
         //Arrange
         UnitCornTestRunner unitCorn = new UnitCornTestRunner();
         Result result;
 
         Class c = TestDummyClass.class;
-        String methodName = "dummyMethod_True_ReturnsTrue";
+        String methodName = "dummyMethodOne_True_ReturnsTrue";
 
         //Act
         result = unitCorn.runTest(c, methodName);
+        //Assert
+        assertTrue(result.isTestHasPassed());
+        assertTrue(result.getExceptionList().size()==0);
+
+    }
+    @Test
+    public void runTest_RunNonexistentTest_CorrectResultReturned(){
+        //Arrange
+        UnitCornTestRunner unitCorn = new UnitCornTestRunner();
+        Result result;
+
+        Class c = TestDummyClass.class;
+        String nonexistentMethodName = "dummyMethodOne_True_ReturnsTr";
+
+        //Act
+        result = unitCorn.runTest(c, nonexistentMethodName);
 
         //Assert
-        assertNotNull(result);
+        assertFalse(result.isTestHasPassed());
+        assertFalse(result.getExceptionList().size()==0);
+
     }
     @Test
     public void getMethodFromClass_MethodExists_MethodReturned(){
@@ -42,5 +60,11 @@ public class TestUnitCornTestRunner {
         String actualMethodName = actualMethod.getName();
         //Assert
         assertEquals(expectedMethodName, actualMethodName);
+    }
+    @Test
+    public void runTests_ClassExists_ReportReturned(){
+        //Arrange
+        //Act
+        //Assert
     }
 }

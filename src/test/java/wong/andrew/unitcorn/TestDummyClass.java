@@ -9,14 +9,25 @@ import static org.junit.Assert.*;
  */
 public class TestDummyClass {
     @Test
-    public void dummyMethod_True_ReturnsTrue(){
+    public void dummyMethodOne_True_ReturnsTrue(){
         //Arrange
         DummyClass dummyClass;
         dummyClass = new DummyClass();
         //Act
-        boolean actualBoolean = dummyClass.dummyMethod();
+        boolean actualBoolean = dummyClass.dummyMethodOne();
 
         //Assert
         assertTrue(actualBoolean);
+    }
+    @Test
+    public void dummyMethodTwo_Zero_ReturnsZero(){
+        //Arrange
+        DummyClass dummyClass;
+        dummyClass = new DummyClass();
+        int expectedInt = 0;
+        //Act
+        int actualInt = dummyClass.dummyMethodTwo();
+        //Assert
+        assertEquals(expectedInt, actualInt);
     }
 }
