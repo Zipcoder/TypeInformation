@@ -2,22 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f866ae3e-8de2-45a3-84dc-062d8d7eef60" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/.gitignore" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/.idea/compiler.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/.idea/encodings.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/.idea/libraries/Maven__junit_junit_3_8_1.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/.idea/misc.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/.idea/modules.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/.idea/workspace.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/src/main/java/kalaygian/dennis/part1/Display.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/src/main/java/kalaygian/dennis/part1/FamilyTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/src/main/java/kalaygian/dennis/part1/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/part1/TestFamilyTree.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/typeinformation/typeinformation.iml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/TypeInformation.iml" afterPath="$PROJECT_DIR$/.idea/TypeInformation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typeinformation/pom.xml" afterPath="$PROJECT_DIR$/typeinformation/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/TestFamilyTree.java" afterPath="$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/TestFamilyTree.java" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -39,11 +24,11 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestFamilyTree.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestFamilyTree.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/TestFamilyTree.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="90">
-              <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
+            <state relative-caret-position="270">
+              <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -61,7 +46,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Display.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Display.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/typeinformation/src/main/java/kalaygian/dennis/Display.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
@@ -105,8 +90,8 @@
         <option value="$PROJECT_DIR$/typeinformation/pom.xml" />
         <option value="$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/AppTest.java" />
         <option value="$PROJECT_DIR$/typeinformation/src/main/java/kalaygian/dennis/App.java" />
-        <option value="$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/TestFamilyTree.java" />
         <option value="$PROJECT_DIR$/typeinformation/src/main/java/kalaygian/dennis/Main.java" />
+        <option value="$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/TestFamilyTree.java" />
       </list>
     </option>
   </component>
@@ -646,15 +631,16 @@
       <workItem from="1493985464320" duration="121000" />
       <workItem from="1493986875348" duration="522000" />
       <workItem from="1493987463073" duration="15000" />
-      <workItem from="1493987542068" duration="336000" />
+      <workItem from="1493987542068" duration="931000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="994000" />
+    <option name="totallyTimeSpent" value="1589000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-176" y="-1080" width="1920" height="1080" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -670,7 +656,7 @@
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.15260416" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -729,16 +715,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/TestFamilyTree.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="0" lean-forward="false" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/typeinformation/src/main/java/kalaygian/dennis/FamilyTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -752,6 +728,16 @@
         <state relative-caret-position="75">
           <caret line="5" column="20" lean-forward="false" selection-start-line="5" selection-start-column="20" selection-end-line="5" selection-end-column="20" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/typeinformation/src/test/java/kalaygian/dennis/TestFamilyTree.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="270">
+          <caret line="18" column="5" lean-forward="false" selection-start-line="18" selection-start-column="5" selection-end-line="18" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
