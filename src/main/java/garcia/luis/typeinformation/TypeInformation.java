@@ -120,7 +120,16 @@ public class TypeInformation<T>
         {
             if(obj.getClass().isInstance(myList.get(i)))
             {
-                instance.add(myList.get(i));
+                try {
+                   Object m = Class.forName(obj.getName()).newInstance();
+                   instance.add(m);
+                } catch (InstantiationException e) {
+                    e.printStackTrace();
+                } catch (IllegalAccessException e) {
+                    e.printStackTrace();
+                } catch (ClassNotFoundException e) {
+                    e.printStackTrace();
+                }
             }
         }
         return instance;
