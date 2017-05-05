@@ -1,8 +1,5 @@
 
-import java.lang.reflect.Constructor;
-import java.lang.reflect.Field;
-import java.lang.reflect.Method;
-import java.lang.reflect.Modifier;
+import java.lang.reflect.*;
 import java.util.ArrayList;
 
 /**
@@ -95,29 +92,45 @@ public class PartOne {
         String hierarchy;
         Class currentClass = o.getClass();
         ArrayList<Class> listOfClasses = new ArrayList<>();
+
         for (int i = 0; currentClass != null; i++) {
             listOfClasses.add(currentClass);
             currentClass = currentClass.getSuperclass();
         }
-        for(int i = listOfClasses.size(); i > 0; i--){
-            sb.append(listOfClasses.get(i-1) + "\n");
-            for (int k = listOfClasses.size(), topClass = listOfClasses.size() - 1; k >= i; k--){
+
+        for (int i = listOfClasses.size(); i > 0; i--) {
+            sb.append(listOfClasses.get(i - 1) + "\n");
+            for (int k = listOfClasses.size(), topClass = listOfClasses.size() - 1; k >= i; k--) {
                 sb.append(doubleSpace);
             }
         }
-//        for (int i = 0; currentClass != null; i++) {
-//            sb.append(currentClass + "\n");
-//            for (int j = 0; j <= i; j++) {
-//                if(currentClass.getSuperclass()==null){
-//                    break;
-//                }
-//                sb.append(doubleSpace);
-//            }
-//            currentClass = currentClass.getSuperclass();
-//        }
+
         hierarchy = sb.toString();
         return hierarchy;
     }
 
+    public ArrayList<Object> instantiateClassHierarchy(Object o) {
+        ArrayList<Object> listOfInstances = new ArrayList<>();
+        ArrayList<Class> listOfClasses = new ArrayList<>();
+        Class currentClass = o.getClass();
+        for (int i = 0; currentClass != null; i++) {
+            listOfClasses.add(currentClass);
+            currentClass = currentClass.getSuperclass();
+        }
+        for (Class aClass : listOfClasses) {
+            try {
+                listOfInstances.add(aClass.getConstructor().newInstance());
+            } catch (NoSuchMethodException e) {
+                System.out.println("Not instantiated, no default constructor for the class " + aClass.getSimpleName());
+            } catch (InstantiationException e) {
+                System.out.println("Not instantiated, the class " + aClass.getSimpleName() + " is abstract");
+            } catch (IllegalAccessException e) {
+                System.out.println("Not instantiated, constructor for the class " + aClass.getSimpleName() + " is inaccessible");
+            } catch (InvocationTargetException e) {
+                System.out.println("Not instantiated, the class " + aClass.getSimpleName() + "has underlying constructor that throws exception");
+            }
+        }
+        return listOfInstances;
+    }
 
 }

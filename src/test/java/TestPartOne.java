@@ -2,6 +2,7 @@ import org.junit.Test;
 
 import java.awt.*;
 import java.io.Serializable;
+import java.util.ArrayList;
 
 import static org.junit.Assert.*;
 
@@ -48,6 +49,27 @@ public class TestPartOne {
 
         //Assert
         assertEquals(expectedHierarchy.trim(), actualHierarchy.trim());
+    }
+    @Test
+    public void instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses(){
+        //Arrange
+        PartOne partOne = new PartOne();
+        Class exampleClassClass = new ExampleClass().getClass();
+        Class objectClass = new Object().getClass();
+        ArrayList<Class> expectedClassesOfInstances = new ArrayList<>();
+        expectedClassesOfInstances.add(exampleClassClass);
+        expectedClassesOfInstances.add(objectClass);
+
+        //Act
+        ArrayList<Object> actualInstances = partOne.instantiateClassHierarchy(new ExampleClass());
+        ArrayList<Class> actualClassesOfInstances = new ArrayList<>();
+        for(Object instance: actualInstances){
+            actualClassesOfInstances.add(instance.getClass());
+        }
+
+        //Assert
+        assertTrue(expectedClassesOfInstances.equals(actualClassesOfInstances));
+        //assert that the class of the each instance in the instances array is different
     }
 
 }
