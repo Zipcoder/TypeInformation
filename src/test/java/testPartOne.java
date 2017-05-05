@@ -1,7 +1,12 @@
 import org.junit.Assert;
 import org.junit.Test;
 
+import java.awt.*;
 import java.io.Serializable;
+import java.lang.reflect.Array;
+import java.lang.reflect.Field;
+import java.math.BigDecimal;
+import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Currency;
 
@@ -29,17 +34,29 @@ public class testPartOne {
 
     @Test
     public void testListAllMember() {
+        //given
+        String stringThatShouldAppear = "public final native void java.lang.Object.notifyAll()";
+        Object objectName = new Button();
+        PartOne testingMemberExistence = new PartOne();
+        //when
+        String actualAnswer = testingMemberExistence.listAllMember(objectName);
+        //then
+        Assert.assertEquals(stringThatShouldAppear, actualAnswer);
 
-        Class className = Currency.class;
-        ArrayList<?>  listOfObjectFields = new ArrayList<Object>();
-        ArrayList<?>  listOfObjectMethod = new ArrayList<Object>();
-        ArrayList<?>  listOfObjectConstructors = new ArrayList<Object>();
 
-        className.getSuperclass().getFields();
-        className.getModifiers();
-        className.getConstructors();
+    }
 
-        className.getFields();
+    @Test
+    public void testGetClassHierarchy() {
+        //given
+        Object objectName = new Button();
+        String expectedString = "    Button";
+        PartOne testing = new PartOne();
+        //when
+        String actualAnswer = testing.getClassHierarchy(objectName);
+
+        //then
+        Assert.assertEquals(expectedString,actualAnswer);
 
 
     }
