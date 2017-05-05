@@ -50,7 +50,7 @@ public class testPartOne {
     public void testGetClassHierarchy() {
         //given
         Object objectName = new Button();
-        String expectedString = "    Button";
+        String expectedString = "Object";
         PartOne testing = new PartOne();
         //when
         String actualAnswer = testing.getClassHierarchy(objectName);

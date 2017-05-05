@@ -2,7 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fb361b-0cdb-43c5-8a97-65c993771893" name="Default" comment="">
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PartOne.java" afterPath="$PROJECT_DIR$/src/main/java/PartOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testPartOne.java" afterPath="$PROJECT_DIR$/src/test/java/testPartOne.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -34,8 +36,8 @@
       <file leaf-file-name="testPartOne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/testPartOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="478">
-              <caret line="58" column="50" lean-forward="false" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+            <state relative-caret-position="328">
+              <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -43,14 +45,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="PartOne.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="PartOne.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/PartOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+            <state relative-caret-position="930">
+              <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="45">
+              <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -82,8 +94,8 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/test/java/testPartOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/PartOne.java" />
+        <option value="$PROJECT_DIR$/src/test/java/testPartOne.java" />
       </list>
     </option>
   </component>
@@ -98,6 +110,9 @@
     <option name="y" value="-1057" />
     <option name="width" value="1617" />
     <option name="height" value="1057" />
+  </component>
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="1" id="Add" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -114,6 +129,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -172,11 +189,31 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeInformation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="TypeInformation" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
-      <pane id="Scope" />
       <pane id="PackagesPane" />
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -714,44 +751,45 @@
       <option name="presentableId" value="Default" />
       <updated>1493925013918</updated>
       <workItem from="1493925015773" duration="15087000" />
-      <workItem from="1493940972888" duration="23693000" />
+      <workItem from="1493940972888" duration="23786000" />
+      <workItem from="1494018362437" duration="1793000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 43m 43s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 31m 14s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 55m 42s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 31m 42s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 56m 03s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 32m 10s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 56m 19s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 32m 50s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 56m 41s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 32m 55s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 57m 52s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 33m 18s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 58m 05s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 34m 04s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 16h 58m 18s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 34m 19s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 02m 27s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 35m 16s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 04m 10s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 17h 36m 01s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="38780000" />
+    <option name="totallyTimeSpent" value="40666000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -783,7 +821,6 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.23191094" sideWeight="0.5" order="6" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -795,6 +832,7 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="9" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -814,6 +852,26 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/src/test/java/testPartOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="870">
+          <caret line="58" column="50" lean-forward="false" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PartOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="900">
+          <caret line="60" column="42" lean-forward="false" selection-start-line="60" selection-start-column="42" selection-end-line="60" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testPartOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="615">
@@ -844,8 +902,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/testPartOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="478">
-          <caret line="58" column="50" lean-forward="false" selection-start-line="58" selection-start-column="50" selection-end-line="58" selection-end-column="50" />
+        <state relative-caret-position="328">
+          <caret line="52" column="39" lean-forward="false" selection-start-line="52" selection-start-column="39" selection-end-line="52" selection-end-column="39" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
@@ -854,11 +912,19 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PartOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="64" column="23" lean-forward="true" selection-start-line="64" selection-start-column="23" selection-end-line="64" selection-end-column="23" />
+        <state relative-caret-position="930">
+          <caret line="62" column="0" lean-forward="true" selection-start-line="62" selection-start-column="0" selection-end-line="62" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="17" lean-forward="false" selection-start-line="3" selection-start-column="17" selection-end-line="3" selection-end-column="17" />
+          <folding />
         </state>
       </provider>
     </entry>

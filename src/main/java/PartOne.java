@@ -47,9 +47,7 @@ public class PartOne {
 
     public String getClassHierarchy(Object classObject) {
 
-        Object holdObject = classObject;
         Class thisClass = classObject.getClass();
-
         List<Class> listOfClasses = new ArrayList<>();
 
         listOfClasses.add(thisClass);
@@ -58,29 +56,13 @@ public class PartOne {
             listOfClasses.add(thisClass);
         }
 
-        for (int i = listOfClasses.size(); i > 0; i--) {
-
-            System.out.println(listOfClasses.get(i - 1).getSimpleName());
-
-            while(i>1){
-                System.out.print(" ");
+        for (int i = listOfClasses.size(), k = 1; i > 0 && k <= listOfClasses.size(); i--, k++) {
+            for (int j = 1; j < k; j++) {
+                System.out.print("  ");
             }
 
-
+            return listOfClasses.get(i - 1).getSimpleName().toString();
         }
-
-        // System.out.println(listOfMethods.get(2));
-
-        // System.out.println(listOfMethods.stream().distinct().collect(Collectors.toList()));
-
-
-        //holdObject = classObject.getClass().getMethods()[i].getDeclaringClass().getSimpleName();
-
-//
-//          String[] a= listOfMethods.stream().distinct().collect(Collectors.toList()).toString().split(" ");
-//            System.out.println(a[0]);
-//            System.out.println(listOfMethods.stream().distinct().collect(Collectors.toList()));
-
 
         return "";
     }
