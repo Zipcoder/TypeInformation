@@ -14,7 +14,7 @@ public class TypeInformation<T>
 
     public boolean classImplementsInterface(Object obj, Class<T> cl)
     {
-        Class classObject = cl.getClass();
+        Class classObject = obj.getClass();
        if(classObject.isInstance(obj))
        {
            return true;
@@ -25,18 +25,56 @@ public class TypeInformation<T>
        }
     }
 
+    public boolean classImplementsInterface(Class obj, Class<T> cl)
+    {
+
+        if(cl.isInstance(obj))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
+    public boolean classImplementsInterface(String obj, Class<T> cl)
+    {
+        Class classObject = obj.getClass();
+        if(cl.isInstance(obj))
+        {
+            return true;
+        }
+        else
+        {
+            return false;
+        }
+    }
+
     public void listAllMembers(Class<T> obj)
     {
-       Method[] methods =  obj.getClass().getDeclaredMethods();
-       obj.getClass().getClass();
+        Class cl = obj.getClass();
+        Constructor[] constructors = cl.getDeclaredConstructors();
+        Field [] fields = cl.getDeclaredFields();
+        Method [] methods = cl.getDeclaredMethods();
 
-        System.out.println(obj.getClass().getDeclaredMethods().length);
-       for(int i  = 0; i < methods.length; i++)
-       {
-           System.out.println(methods[i]);
-       }
+        System.out.println("Constructors");
+        for(int i  = 0; i < constructors.length; i++)
+        {
+           System.out.println(constructors[i]);
+        }
+        System.out.println("Fields");
+        for(int i  = 0; i < fields.length; i++)
+        {
+            System.out.println(fields[i]);
+        }
+        System.out.println("Methods");
+        for(int i  = 0; i < methods.length; i++)
+        {
+            System.out.println(methods[i]);
+        }
+        System.out.println();
 
-        System.out.println("size = " + methods.length);
     }
 
     public void getClassHierarchy(Class<T> obj)
@@ -73,6 +111,22 @@ public class TypeInformation<T>
         return superClassList;
 
     }
+
+    public ArrayList<?> instantiateClassHierarchy(Class<?> obj)
+    {
+        ArrayList <?> myList = getSuperClass(obj);
+        ArrayList<Object> instance = new ArrayList<Object>();
+        for(int i = 0; i < myList.size(); i++)
+        {
+            if(obj.getClass().isInstance(myList.get(i)))
+            {
+                instance.add(myList.get(i));
+            }
+        }
+        return instance;
+    }
+
+
 
 
 
