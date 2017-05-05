@@ -16,27 +16,33 @@ public class Part1Test {
 
     @Test
     public void classImplementsInterface(){
+
         //Given
         Part1 part1 = new Part1();
-        Class cl = ArrayList.class;
-        String inter = Serializable.class.getSimpleName();
-
+        Class cls = ArrayList.class;
+        Class inter = Serializable.class;
 
         //When
-        boolean actual = part1.classImplementsInterface(cl, inter);
+        boolean actual = part1.classImplementsInterface(cls, inter);
 
         //Then
         Assert.assertEquals(true, actual);
     }
 
-    @Test
-    public void listAllMembersTest(){
-        //Given
-        Part1 part1 = new Part1();
-        Class cl = ArrayList.class;
-
-        String expectedResult = 
-
-    }
+//    @Test
+//    public void listAllMembersTest(){
+//        //Given
+//        Part1 part1 = new Part1();
+//        Class cls = ArrayList.class;
+//
+//        String expectedResult = "  ";
+//
+//        //When
+//        String actualResult = part1.listAllMembers();
+//
+//        //Then
+//        Assert.assertEquals(expectedResult, actualResult);
+//
+//    }
 
 }

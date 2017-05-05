@@ -1,25 +1,23 @@
-import java.util.ArrayList;
-import java.util.Comparator;
-
 /**
  * Created by aurorabanuelos on 5/4/17.
  */
 public class Part1 {
 
-    ArrayList interlist = new ArrayList();
+    boolean x;
 
+    public boolean classImplementsInterface(Class cls, Class inter) {
 
-    public boolean classImplementsInterface(Object cl, String s) {
+        Class[] interfaceList = cls.getInterfaces();
 
-        String testInter = cl.getClass().getInterfaces()[0].getSimpleName();
+        for (Class e : interfaceList)
+            if (e.equals(inter)) {
+                x = true;
+            } else {
+                x = false;
+            }
 
-        if(testInter.equals(s)){
-            return true;
+        return x;
 
-        }else{
-
-            return false;
-        }
 
     }
 }
