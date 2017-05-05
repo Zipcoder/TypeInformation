@@ -27,14 +27,24 @@ public class TestPartOne {
     public void listAllMembers_ObjectHasMembers_ListOfMembersIsReturned(){
         //Arrange
         PartOne partOne = new PartOne();
-        Class anObject;
-        anObject = ExampleClass.class;
-        String expectedList = "private field1\nprivate field2\nprivate field3\nprivate field4\npublic addFields\npublic ExampleClass\npublic ExampleClass\npublic ExampleClass\n";
+        ExampleClass o = new ExampleClass();
+        String expectedList = "Fields:\nprivate field1\nprivate field2\nprivate field3\nprivate field4\n"+
+                "Methods:\npublic addFields\npublic final wait\npublic final native wait\npublic final wait\npublic equals\npublic toString\npublic native hashCode\npublic final native getClass\npublic final native notify\npublic final native notifyAll\n"+
+                "Constructors:\npublic ExampleClass\npublic ExampleClass\npublic ExampleClass\n";
 
         //Act
-        String actualList = partOne.listAllMembers(anObject);
+        String actualList = partOne.listAllMembers(o);
 
         //Assert
         assertEquals(expectedList,actualList);
     }
+    @Test
+    public void getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned(){
+        //Arrange
+
+        //Act
+
+        //Assert
+    }
+
 }

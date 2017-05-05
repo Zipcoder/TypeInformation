@@ -48,6 +48,8 @@ public class PartOne {
         StringBuilder sb = new StringBuilder();
         Field[] fields = o.getClass().getDeclaredFields();
         for (Field field : fields) {
+            sb.append(o.getClass().getSimpleName());
+            sb.append(space);
             sb.append(Modifier.toString(field.getModifiers()));
             sb.append(space);
             sb.append(field.getName());
@@ -61,6 +63,8 @@ public class PartOne {
 
         Method[] methods = o.getClass().getMethods();
         for (Method method : methods) {
+            sb.append(method.getDeclaringClass().getSimpleName());
+            sb.append(space);
             sb.append(Modifier.toString(method.getModifiers()));
             sb.append(space);
             sb.append(method.getName());
@@ -74,6 +78,8 @@ public class PartOne {
 
         Constructor<?>[] constructors = o.getClass().getConstructors();
         for (Constructor constructor : constructors) {
+            sb.append(constructor.getDeclaringClass().getSimpleName());
+            sb.append(space);
             sb.append(Modifier.toString(constructor.getModifiers()));
             sb.append(space);
             sb.append(constructor.getName());
