@@ -9,15 +9,14 @@ import static org.junit.Assert.*;
  */
 public class TestDummyClass {
     @Test
-    public void dummyMethod_Void_ReturnsVoid(){
+    public void dummyMethod_True_ReturnsTrue(){
         //Arrange
         DummyClass dummyClass;
         dummyClass = new DummyClass();
-        boolean expectedBoolean = true;
         //Act
         boolean actualBoolean = dummyClass.dummyMethod();
 
         //Assert
-        assertEquals(expectedBoolean, actualBoolean);
+        assertTrue(actualBoolean);
     }
 }

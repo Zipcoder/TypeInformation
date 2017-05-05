@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0dd25a97-83a1-4548-ac5d-d97f0c7ff1d6" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/Main.java" afterPath="$PROJECT_DIR$/src/main/java/Main.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PartOne.java" afterPath="$PROJECT_DIR$/src/main/java/PartOne.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/UnitCornTestRunner.java" afterPath="$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/UnitCornTestRunner.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestDummyClass.java" afterPath="$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestDummyClass.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestUnitCornTestRunner.java" afterPath="$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestUnitCornTestRunner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -23,30 +25,23 @@
       <file leaf-file-name="UnitCornTestRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/UnitCornTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="DummyClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/DummyClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestDummyClass.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestDummyClass.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+            <state relative-caret-position="300">
+              <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
               <folding>
                 <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/Main.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+              <folding>
+                <element signature="e#138#139#0" expanded="true" />
+                <element signature="e#208#209#0" expanded="true" />
               </folding>
             </state>
           </provider>
@@ -74,9 +69,23 @@
       <file leaf-file-name="TestUnitCornTestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestUnitCornTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="271">
+              <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestDummyClass.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestDummyClass.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="44" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -111,11 +120,12 @@
         <option value="$PROJECT_DIR$/src/test/java/TestPartOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/PartOne.java" />
         <option value="$PROJECT_DIR$/src/main/java/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/UnitCornTestRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/Result.java" />
-        <option value="$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestUnitCornTestRunner.java" />
         <option value="$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/DummyClass.java" />
         <option value="$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestDummyClass.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/Main.java" />
+        <option value="$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestUnitCornTestRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/UnitCornTestRunner.java" />
       </list>
     </option>
   </component>
@@ -175,10 +185,6 @@
             <PATH_ELEMENT>
               <option name="myItemId" value="Maven: junit:junit:4.12" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.NamedLibraryElementNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="junit-4.12.jar" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
           <PATH>
@@ -326,64 +332,7 @@
       <recent name="wong.andrew.typeinfop1" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned">
-    <configuration default="false" name="TestPartOne.classImplementsInterface_ClassIsDimensionInterfaceIsSerializable_DimensionImplementsSerializableIsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TypeInformation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestPartOne" />
-      <option name="METHOD_NAME" value="classImplementsInterface_ClassIsDimensionInterfaceIsSerializable_DimensionImplementsSerializableIsTrue" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestPartOne.listAllMembers_ObjectHasMembers_ListOfMembersIsReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TypeInformation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestPartOne" />
-      <option name="METHOD_NAME" value="listAllMembers_ObjectHasMembers_ListOfMembersIsReturned" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="MAIN_CLASS_NAME" value="Main" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="TypeInformation" />
-      <envs />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestUnitCornTestRunner.runTest_TestingPartOneListAllMembers_ResultReturned">
     <configuration default="false" name="TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TypeInformation" />
@@ -405,14 +354,97 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestPartOne.instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+    <configuration default="false" name="TestDummyClass.dummyMethod_True_ReturnsTrue" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="wong.andrew.unitcorn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <module name="TypeInformation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestPartOne" />
-      <option name="METHOD_NAME" value="instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" />
+      <option name="PACKAGE_NAME" value="wong.andrew.unitcorn" />
+      <option name="MAIN_CLASS_NAME" value="wong.andrew.unitcorn.TestDummyClass" />
+      <option name="METHOD_NAME" value="dummyMethod_True_ReturnsTrue" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestUnitCornTestRunner.runTest_TestingPartOneListAllMembers_ResultReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="wong.andrew.unitcorn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeInformation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="wong.andrew.unitcorn" />
+      <option name="MAIN_CLASS_NAME" value="wong.andrew.unitcorn.TestUnitCornTestRunner" />
+      <option name="METHOD_NAME" value="runTest_TestingPartOneListAllMembers_ResultReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestUnitCornTestRunner.getMethodFromClass_ClassIsDummyClass_DummyMethodReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="wong.andrew.unitcorn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeInformation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="wong.andrew.unitcorn" />
+      <option name="MAIN_CLASS_NAME" value="wong.andrew.unitcorn.TestUnitCornTestRunner" />
+      <option name="METHOD_NAME" value="getMethodFromClass_ClassIsDummyClass_DummyMethodReturned" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="wong.andrew.unitcorn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeInformation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="wong.andrew.unitcorn" />
+      <option name="MAIN_CLASS_NAME" value="wong.andrew.unitcorn.TestUnitCornTestRunner" />
+      <option name="METHOD_NAME" value="getMethodFromClass_MethodExists_MethodReturned" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -807,19 +839,19 @@
       <method />
     </configuration>
     <list size="5">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestPartOne.classImplementsInterface_ClassIsDimensionInterfaceIsSerializable_DimensionImplementsSerializableIsTrue" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestPartOne.listAllMembers_ObjectHasMembers_ListOfMembersIsReturned" />
-      <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestPartOne.instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" />
+      <item index="0" class="java.lang.String" itemvalue="JUnit.TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestDummyClass.dummyMethod_True_ReturnsTrue" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.runTest_TestingPartOneListAllMembers_ResultReturned" />
+      <item index="3" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.getMethodFromClass_ClassIsDummyClass_DummyMethodReturned" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestPartOne.instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" />
-        <item index="2" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestPartOne.listAllMembers_ObjectHasMembers_ListOfMembersIsReturned" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestPartOne.classImplementsInterface_ClassIsDimensionInterfaceIsSerializable_DimensionImplementsSerializableIsTrue" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.runTest_TestingPartOneListAllMembers_ResultReturned" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.getMethodFromClass_ClassIsDummyClass_DummyMethodReturned" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestDummyClass.dummyMethod_True_ReturnsTrue" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" />
       </list>
     </recent_temporary>
   </component>
@@ -834,44 +866,44 @@
       <option name="presentableId" value="Default" />
       <updated>1493926101051</updated>
       <workItem from="1493926102807" duration="23971000" />
-      <workItem from="1493996224363" duration="9274000" />
+      <workItem from="1493996224363" duration="13603000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestPartOne_getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned - 2017.05.05 at 13h 04m 34s.xml">
-      <configuration name="TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 37m 57s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned - 2017.05.05 at 13h 05m 26s.xml">
-      <configuration name="TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 39m 18s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned - 2017.05.05 at 13h 08m 01s.xml">
-      <configuration name="TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 39m 47s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned - 2017.05.05 at 13h 09m 34s.xml">
-      <configuration name="TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 47m 54s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned - 2017.05.05 at 13h 11m 02s.xml">
-      <configuration name="TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 48m 58s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned - 2017.05.05 at 15h 23m 22s.xml">
-      <configuration name="TestPartOne.getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 51m 01s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses - 2017.05.05 at 13h 59m 37s.xml">
-      <configuration name="TestPartOne.instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 52m 20s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses - 2017.05.05 at 14h 19m 13s.xml">
-      <configuration name="TestPartOne.instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_getMethodFromClass_MethodExists_MethodReturned - 2017.05.05 at 16h 52m 32s.xml">
+      <configuration name="TestUnitCornTestRunner.getMethodFromClass_MethodExists_MethodReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses - 2017.05.05 at 14h 46m 25s.xml">
-      <configuration name="TestPartOne.instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_runTest_TestingPartOneListAllMembers_ResultReturned - 2017.05.05 at 17h 08m 38s.xml">
+      <configuration name="TestUnitCornTestRunner.runTest_TestingPartOneListAllMembers_ResultReturned" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestPartOne_instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses - 2017.05.05 at 15h 23m 18s.xml">
-      <configuration name="TestPartOne.instantiateClassHierarchy_ClassIsExampleClass_returnsListOfInstancesOfAllConcreteClasses" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_runTest_TestingPartOneListAllMembers_ResultReturned - 2017.05.05 at 17h 09m 04s.xml">
+      <configuration name="TestUnitCornTestRunner.runTest_TestingPartOneListAllMembers_ResultReturned" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33245000" />
+    <option name="totallyTimeSpent" value="37574000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="-1080" width="1920" height="1080" extended-state="0" />
@@ -887,14 +919,14 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32429817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32429817" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32913843" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -984,16 +1016,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/PartOne.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="true" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestPartOne.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="630">
@@ -1065,6 +1087,51 @@
         </state>
       </provider>
     </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/Assert.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-570">
+          <caret line="12" column="13" lean-forward="false" selection-start-line="12" selection-start-column="13" selection-end-line="12" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/junit/junit/4.12/junit-4.12.jar!/junit/framework/AssertionFailedError.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/DummyClass.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="63" lean-forward="false" selection-start-line="7" selection-start-column="63" selection-end-line="7" selection-end-column="63" />
+          <folding>
+            <element signature="e#138#139#0" expanded="true" />
+            <element signature="e#208#209#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/PartOne.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="13" lean-forward="false" selection-start-line="7" selection-start-column="13" selection-end-line="7" selection-end-column="13" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/Result.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="150">
@@ -1082,37 +1149,33 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestUnitCornTestRunner.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="22" lean-forward="false" selection-start-line="4" selection-start-column="0" selection-end-line="5" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestDummyClass.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="5" lean-forward="false" selection-start-line="21" selection-start-column="5" selection-end-line="21" selection-end-column="5" />
+        <state relative-caret-position="165">
+          <caret line="11" column="44" lean-forward="false" selection-start-line="11" selection-start-column="16" selection-end-line="11" selection-end-column="44" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/DummyClass.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/wong/andrew/unitcorn/TestUnitCornTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="36" lean-forward="false" selection-start-line="7" selection-start-column="36" selection-end-line="7" selection-end-column="36" />
-          <folding />
+        <state relative-caret-position="271">
+          <caret line="27" column="0" lean-forward="false" selection-start-line="27" selection-start-column="0" selection-end-line="27" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/wong/andrew/unitcorn/UnitCornTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="300">
+          <caret line="20" column="9" lean-forward="true" selection-start-line="20" selection-start-column="9" selection-end-line="20" selection-end-column="9" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
