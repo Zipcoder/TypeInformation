@@ -43,6 +43,7 @@ public class PartOne {
         return list;
     }
 
+    //helper method for listAllMembers
     private String listFields(Object o) {
         StringBuilder sb = new StringBuilder();
         Field[] fields = o.getClass().getDeclaredFields();
@@ -57,6 +58,7 @@ public class PartOne {
         return sb.toString();
     }
 
+    //helper method for listAllMembers
     private String listMethods(Object o) {
         StringBuilder sb = new StringBuilder();
 
@@ -72,6 +74,7 @@ public class PartOne {
         return sb.toString();
     }
 
+    //helper method for listAllMembers
     private String listConstructors(Object o) {
         StringBuilder sb = new StringBuilder();
 
@@ -121,13 +124,17 @@ public class PartOne {
             try {
                 listOfInstances.add(aClass.getConstructor().newInstance());
             } catch (NoSuchMethodException e) {
-                System.out.println("Not instantiated, no default constructor for the class " + aClass.getSimpleName());
+                String errorMessage = "Not instantiated, no default constructor for the class"  + aClass.getSimpleName();
+                listOfInstances.add(errorMessage);
             } catch (InstantiationException e) {
-                System.out.println("Not instantiated, the class " + aClass.getSimpleName() + " is abstract");
+                String errorMessage = "Not instantiated, the class " + aClass.getSimpleName() + " is abstract";
+                listOfInstances.add(errorMessage);
             } catch (IllegalAccessException e) {
-                System.out.println("Not instantiated, constructor for the class " + aClass.getSimpleName() + " is inaccessible");
+                String errorMessage = "Not instantiated, constructor for the class " + aClass.getSimpleName() + " is inaccessible";
+                listOfInstances.add(errorMessage);
             } catch (InvocationTargetException e) {
-                System.out.println("Not instantiated, the class " + aClass.getSimpleName() + "has underlying constructor that throws exception");
+                String errorMessage = "Not instantiated, the class " + aClass.getSimpleName() + "has underlying constructor that throws exception";
+                listOfInstances.add(errorMessage);
             }
         }
         return listOfInstances;

@@ -14,7 +14,12 @@ public class Main {
 //        System.out.println(partOne.getClassHierarchy(new Menu()));
         ArrayList<Object> instances = partOne.instantiateClassHierarchy(new Integer(0));
         for(Object o: instances){
-            System.out.println(o.getClass().getSimpleName());
+            if(o.getClass().getSimpleName().equals("String"))
+            {
+                System.out.println(o.toString());
+            }
+            else
+                System.out.println(o.getClass().getSimpleName());
         }
     }
 }
