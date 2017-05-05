@@ -117,7 +117,7 @@ public class ClassInspector {
             try{
                 objList.add(list.get(i).newInstance());
             } catch (InstantiationException e){
-                System.out.println(list.get(i).getSimpleName() + " did not have a no-args constructor and could not be instantiated");
+                System.out.println(list.get(i).getSimpleName() + " could not be instantiated");
             } catch (IllegalAccessException e){
                 System.out.println(list.get(i).getSimpleName() + " was not able to be accessed");
             }
