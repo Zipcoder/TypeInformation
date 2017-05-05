@@ -1,7 +1,5 @@
-package garcia.luis.typeinformation;
+package garcia.luis;
 
-import org.junit.Test;
-import org.junit.Assert;
 import java.lang.reflect.*;
 import java.util.ArrayList;
 
@@ -10,12 +8,11 @@ import java.util.ArrayList;
  */
 public class TypeInformation<T>
 {
-    public  TypeInformation(){}
 
     public boolean classImplementsInterface(Object obj, Class<T> cl)
     {
         Class classObject = obj.getClass();
-       if(classObject.isInstance(obj))
+       if(classObject.isInstance(cl))
        {
            return true;
        }
@@ -121,7 +118,7 @@ public class TypeInformation<T>
             if(obj.getClass().isInstance(myList.get(i)))
             {
                 try {
-                   Object m = Class.forName(obj.getName()).newInstance();
+                   Object m = Class.forName(obj.getClass().getName()).newInstance();
                    instance.add(m);
                 } catch (InstantiationException e) {
                     e.printStackTrace();
