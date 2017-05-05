@@ -29,7 +29,7 @@ public class UnitCornTestRunnerTest {
     @Test
     public void runTestUnitTest() {
         Assert.assertEquals(
-                   "METHOD failBecauseOfBoolean IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL",
+                   "METHOD failBecauseOfBoolean IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL\n",
                    unitCorn.runTest(stubUnitTest, "failBecauseOfBoolean").toString());
     }
 

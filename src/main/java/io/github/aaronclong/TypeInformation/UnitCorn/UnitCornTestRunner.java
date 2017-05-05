@@ -8,7 +8,7 @@ import java.lang.reflect.InvocationTargetException;
 import java.util.ArrayList;
 
 /**
- * Created by aaronlong on 5/4/17.
+ * UnitCornTestRunner by aaronlong on 5/4/17.
  */
 public class UnitCornTestRunner {
 

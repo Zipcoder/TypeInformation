@@ -1,2 +1,2 @@
-METHOD public void io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest.passStringEquality() IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest PASS
-METHOD public void io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest.failBecauseOfBoolean() IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL
+class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest PASS
+class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL
