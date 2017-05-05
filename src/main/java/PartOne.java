@@ -3,6 +3,7 @@ import java.lang.reflect.Constructor;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
+import java.util.ArrayList;
 
 /**
  * Created by andrewwong on 5/4/17.
@@ -10,6 +11,7 @@ import java.lang.reflect.Modifier;
 public class PartOne {
     private final String newLine = "\n";
     private final String space = " ";
+    private final String doubleSpace = "  ";
 
     public boolean classImplementsInterface(Class<?> aClass, String interfaceName) {
         boolean isImplemented = false;
@@ -86,6 +88,35 @@ public class PartOne {
             sb.append(newLine);
         }
         return sb.toString();
+    }
+
+    public String getClassHierarchy(Object o) {
+        StringBuilder sb = new StringBuilder();
+        String hierarchy;
+        Class currentClass = o.getClass();
+        ArrayList<Class> listOfClasses = new ArrayList<>();
+        for (int i = 0; currentClass != null; i++) {
+            listOfClasses.add(currentClass);
+            currentClass = currentClass.getSuperclass();
+        }
+        for(int i = listOfClasses.size(), j = 0; i > 0; i--, j++){
+            sb.append(listOfClasses.get(i) + "\n");
+            for (int k = 0; k < j; k++){
+                sb.append(doubleSpace);
+            }
+        }
+//        for (int i = 0; currentClass != null; i++) {
+//            sb.append(currentClass + "\n");
+//            for (int j = 0; j <= i; j++) {
+//                if(currentClass.getSuperclass()==null){
+//                    break;
+//                }
+//                sb.append(doubleSpace);
+//            }
+//            currentClass = currentClass.getSuperclass();
+//        }
+        hierarchy = sb.toString();
+        return hierarchy;
     }
 
 

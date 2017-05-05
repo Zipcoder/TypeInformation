@@ -28,9 +28,9 @@ public class TestPartOne {
         //Arrange
         PartOne partOne = new PartOne();
         ExampleClass o = new ExampleClass();
-        String expectedList = "Fields:\nprivate field1\nprivate field2\nprivate field3\nprivate field4\n"+
-                "Methods:\npublic addFields\npublic final wait\npublic final native wait\npublic final wait\npublic equals\npublic toString\npublic native hashCode\npublic final native getClass\npublic final native notify\npublic final native notifyAll\n"+
-                "Constructors:\npublic ExampleClass\npublic ExampleClass\npublic ExampleClass\n";
+        String expectedList = "Fields:\nExampleClass private field1\nExampleClass private field2\nExampleClass private field3\nExampleClass private field4\n"+
+                "Methods:\nExampleClass public addFields\nObject public final wait\nObject public final native wait\nObject public final wait\nObject public equals\nObject public toString\nObject public native hashCode\nObject public final native getClass\nObject public final native notify\nObject public final native notifyAll\n"+
+                "Constructors:\nExampleClass public ExampleClass\nExampleClass public ExampleClass\nExampleClass public ExampleClass\n";
 
         //Act
         String actualList = partOne.listAllMembers(o);
@@ -41,10 +41,12 @@ public class TestPartOne {
     @Test
     public void getClassHierarchy_ClassIsInteger_HierarchyWithObjectAndNumberIsReturned(){
         //Arrange
-
+        String expectedHierarchy = "class java.lang.Object\n  class java.lang.Number\n    class java.lang.Integer\n";
+        PartOne partOne = new PartOne();
         //Act
-
+        String actualHierarchy = partOne.getClassHierarchy(new Integer(0));
         //Assert
+        assertEquals(expectedHierarchy, actualHierarchy);
     }
 
 }
