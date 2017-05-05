@@ -20,6 +20,18 @@ public class UnitCornTestRunner {
         return null;
     }
 
+    public Object instantiateClass(Class c){
+        try {
+            Object object = c.newInstance();
+            return object;
+        } catch (InstantiationException e) {
+            System.out.println(c.getSimpleName() + ": could not instantiate!");
+        } catch (IllegalAccessException e) {
+            System.out.println(e);
+        }
+        return null;
+    }
+
     public String runTests(Class c){
         return "";
     }

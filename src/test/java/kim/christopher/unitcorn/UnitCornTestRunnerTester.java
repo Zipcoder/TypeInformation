@@ -35,6 +35,32 @@ public class UnitCornTestRunnerTester {
     }
 
     @Test
+    public void InstantiateClassTest(){
+
+        //: Given
+        c = String.class;
+
+        //: When
+        Object obj = runner.instantiateClass(c);
+        String expectedValue = "String";
+        String actualValue = obj.getClass().getSimpleName();
+
+        //: Then
+        assertEquals(expectedValue, actualValue);
+
+    }
+
+    @Test
+    public void InstantiateClassFailTest(){
+
+        //: When
+        Object expectedObject = runner.instantiateClass(c);
+
+        //: Then
+        assertNull(expectedObject);
+    }
+
+    @Test
     public void runTestTest(){
 
         //: Given
