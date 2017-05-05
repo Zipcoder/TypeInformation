@@ -43,7 +43,7 @@ public class UnitCornTestRunner {
 
     public String runTests(Class cls) {
         for (Method method : getUnitMethods(cls)) {
-            sortMethod(method);
+            sortAnnotation(method);
         }
 
         for (Method test : testList) {
@@ -64,8 +64,7 @@ public class UnitCornTestRunner {
         try {
             theMethod.invoke(theObject);
             return true;
-        }
-        catch(InvocationTargetException | IllegalAccessException e) {
+        } catch(InvocationTargetException | IllegalAccessException e) {
             return false;
         }
     }
@@ -79,11 +78,11 @@ public class UnitCornTestRunner {
         return methodResult;
     }
 
-    private Method[] getUnitMethods(Class c) {
-        return c.getMethods();
+    private Method[] getUnitMethods(Class cls) {
+        return cls.getMethods();
     }
 
-    private void sortMethod(Method m) {
+    private void sortAnnotation(Method m) {
         if (m.isAnnotationPresent(Test.class)) testList.add(m);
         if (m.isAnnotationPresent(Before.class)) beforeMethod = m;
         else if (m.isAnnotationPresent(After.class)) afterMethod = m;

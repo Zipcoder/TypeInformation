@@ -1,5 +1,6 @@
 package io.github.aaronclong.TypeInformation.UnitCorn;
 
+import org.junit.Before;
 import org.junit.Test;
 import org.junit.Assert;
 
@@ -9,6 +10,12 @@ import org.junit.Assert;
 
 
 public class StubUnitTest {
+
+    @Before
+    public void setUp() {
+        System.out.println("Assigning the member fields");
+    }
+
     @Test
     public void failBecauseOfBoolean() {
         Assert.assertTrue("Fake Boolean Test", false);

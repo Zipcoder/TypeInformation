@@ -22,7 +22,7 @@ public class UnitCornTestRunnerTest {
             unitCorn = new UnitCornTestRunner();
             stubUnitTest = Class.forName("io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest");
         } catch(ClassNotFoundException e) {
-
+            System.out.println(e.getMessage());
         }
     }
 
@@ -38,9 +38,10 @@ public class UnitCornTestRunnerTest {
         try {
             String url = getClass().getClassLoader().getResource("runTestPrettyPrint.txt").getFile();
             FileReader reader = new FileReader(url);
-            String result = CharStreams.toString(reader);
+            String file = CharStreams.toString(reader);
+            String testResults = unitCorn.runTests(stubUnitTest);
             Assert.assertEquals("Confirming pretty log of test runner",
-                    result, unitCorn.runTests(stubUnitTest));
-        } catch(IOException e) { System.out.println(e); }
+                    file, testResults);
+        } catch(IOException e) { System.out.println(e.getMessage()); }
     }
 }
