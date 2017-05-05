@@ -1,10 +1,9 @@
-package kim.christopher;
+package kim.christopher.partOne;
 
+import kim.christopher.partOne.ClassInspector;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.io.File;
-import java.io.FileWriter;
 import java.util.ArrayList;
 import java.util.List;
 
