@@ -14,18 +14,18 @@ public class UnitCornTestRunner {
 
     private Method beforeMethod;
     private Method afterMethod;
-    private ArrayList<Method> testList = new ArrayList<Method>();
-    private ArrayList<Result> allResults = new ArrayList<Result>();
+    private ArrayList<Method> testList = new ArrayList<>();
+    private ArrayList<Result> allResults = new ArrayList<>();
 
-    public Result runTest(Class c, String method) {
-        Result result = Result.makeResultInstance(c.toString(), method, "NOTRAN");
+    public Result runTest(Class cls, String method) {
+        Result result = Result.makeResultInstance(cls.toString(), method, "NOTRAN");
         try {
-            Method m = c.getMethod(method);
-            Object o = c.newInstance();
+            Method m = cls.getMethod(method);
+            Object o = cls.newInstance();
             String passOrFail = methodPassOrFail(m, o);
-            result = Result.makeResultInstance(c.toString(), method, passOrFail);
+            result = Result.makeResultInstance(cls.toString(), method, passOrFail);
         } catch(Exception e) {
-            Result.makeResultInstance(c.toString(), method, "FAIL");
+            Result.makeResultInstance(cls.toString(), method, "FAIL");
         }
         return result;
     }
@@ -41,17 +41,17 @@ public class UnitCornTestRunner {
         return result;
     }
 
-    public String runTests(Class c) {
-        for (Method method : getUnitMethods(c)) {
+    public String runTests(Class cls) {
+        for (Method method : getUnitMethods(cls)) {
             sortMethod(method);
         }
 
         for (Method test : testList) {
-            Object obj = makeObject(c);
+            Object obj = makeObject(cls);
             if (beforeMethod != null) {
                simpleMethodInvoke(test, obj);
             }
-            allResults.add(runTest(c, obj, test));
+            allResults.add(runTest(cls, obj, test));
             if (afterMethod != null) {
                 simpleMethodInvoke(test, obj);
             }

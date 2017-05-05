@@ -29,7 +29,7 @@ public class UnitCornTestRunnerTest {
     @Test
     public void runTestUnitTest() {
         Assert.assertEquals(
-                   "METHOD failBecauseOfBoolean IN class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL\n",
+                   "class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL\n",
                    unitCorn.runTest(stubUnitTest, "failBecauseOfBoolean").toString());
     }
 
@@ -39,7 +39,6 @@ public class UnitCornTestRunnerTest {
             String url = getClass().getClassLoader().getResource("runTestPrettyPrint.txt").getFile();
             FileReader reader = new FileReader(url);
             String result = CharStreams.toString(reader);
-            System.out.println(unitCorn.runTests(stubUnitTest));
             Assert.assertEquals("Confirming pretty log of test runner",
                     result, unitCorn.runTests(stubUnitTest));
         } catch(IOException e) { System.out.println(e); }
