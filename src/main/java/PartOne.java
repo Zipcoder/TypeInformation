@@ -99,9 +99,9 @@ public class PartOne {
             listOfClasses.add(currentClass);
             currentClass = currentClass.getSuperclass();
         }
-        for(int i = listOfClasses.size(), j = 0; i > 0; i--, j++){
-            sb.append(listOfClasses.get(i) + "\n");
-            for (int k = 0; k < j; k++){
+        for(int i = listOfClasses.size(); i > 0; i--){
+            sb.append(listOfClasses.get(i-1) + "\n");
+            for (int k = listOfClasses.size(), topClass = listOfClasses.size() - 1; k >= i; k--){
                 sb.append(doubleSpace);
             }
         }

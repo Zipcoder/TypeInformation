@@ -45,8 +45,9 @@ public class TestPartOne {
         PartOne partOne = new PartOne();
         //Act
         String actualHierarchy = partOne.getClassHierarchy(new Integer(0));
+
         //Assert
-        assertEquals(expectedHierarchy, actualHierarchy);
+        assertEquals(expectedHierarchy.trim(), actualHierarchy.trim());
     }
 
 }
