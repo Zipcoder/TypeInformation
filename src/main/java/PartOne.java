@@ -1,3 +1,4 @@
+import java.awt.*;
 import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
@@ -37,7 +38,6 @@ public class PartOne {
             System.out.print(classObject.getClass().getMethods()[i].getDeclaringClass().getSimpleName() + " ");
             System.out.println(classObject.getClass().getMethods()[i]);
 
-
             if (classObject.getClass().getMethods()[i].toString().equals("public final native void java.lang.Object.notifyAll()")) {
                 return classObject.getClass().getMethods()[classObject.getClass().getMethods().length - 1].toString();
             }
@@ -48,20 +48,26 @@ public class PartOne {
     public String getClassHierarchy(Object classObject) {
 
         Object holdObject = classObject;
-        Object C = classObject.getClass();
+        Class thisClass = classObject.getClass();
 
-        List<Object> listOfMethods = new ArrayList<>();
+        List<Class> listOfClasses = new ArrayList<>();
 
-        System.out.println(classObject.getClass().getSuperclass().getClasses().length);
-        for (int i = 0; C != null; i++) {
-            listOfMethods.add(holdObject);// classObject
-//            System.out.println(holdObject);
-            holdObject = listOfMethods.get(i).getClass().getSuperclass();
-
-            C = C.getClass().getSuperclass();
-
+        listOfClasses.add(thisClass);
+        while (thisClass.getSuperclass() != null) {
+            thisClass = thisClass.getSuperclass();
+            listOfClasses.add(thisClass);
         }
 
+        for (int i = listOfClasses.size(); i > 0; i--) {
+
+            System.out.println(listOfClasses.get(i - 1).getSimpleName());
+
+            while(i>1){
+                System.out.print(" ");
+            }
+
+
+        }
 
         // System.out.println(listOfMethods.get(2));
 
