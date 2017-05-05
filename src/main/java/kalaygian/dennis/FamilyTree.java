@@ -1,5 +1,5 @@
 package kalaygian.dennis;
-import java.util.ArrayList;
+
 
 /**
  * Created by denniskalaygian on 5/5/17.
@@ -21,42 +21,45 @@ public class FamilyTree {
     }
 
     public Boolean classImplementsInterface(String interfce) throws ClassNotFoundException {
-        Class class1 = originalClass; //nah
+        Class class1 = originalClass;
         return Class.forName(interfce).isAssignableFrom(class1);
     }
 
     public String getClassHierarchy() throws ClassNotFoundException {
+        int count = getClassHierarchyLength();
+        Class[] classList = createClassHierarchyArray(count);
+        return formatClassHierarchyArray(classList);
+    }
 
-        //////Establish number of classes in the hierarchy//////
-        Class class1 = originalClass; //nah
-
+    private int getClassHierarchyLength() throws ClassNotFoundException{
+        Class class1 = originalClass;
         int count = 0;
-
         while(class1.getSuperclass() != null){
             count += 1;
             class1 = class1.getSuperclass();
         }
-        
-        class1 = originalClass;
+        return count + 1;
+    }
 
-        Class[] classList = new Class[count + 1];
-
+    private Class[] createClassHierarchyArray(int count) throws ClassNotFoundException {
+        Class class1 = originalClass;
+        Class[] classList = new Class[count];
         classList[0] = Class.forName("java.lang.Object");
-
         for(int index = count; index > 0; index--){
-            classList[index] = class1;
+            classList[index - 1] = class1;
             class1 = class1.getSuperclass();
         }
-        /////////////////////////////////////////////////////
+        return classList;
+    }
+
+    private String formatClassHierarchyArray(Class[] classList){
         String spaces = "";
         String returnHierarchy = "";
-
-        for(int index = 0; index < count + 1; index++){
+        for(int index = 0; index < classList.length; index++){
             returnHierarchy += spaces + classList[index].getName() + "\n";
             spaces += "  ";
-
         }
         return returnHierarchy;
-
     }
+
 }
