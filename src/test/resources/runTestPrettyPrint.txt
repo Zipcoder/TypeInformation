@@ -1,0 +1,2 @@
+class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest PASS
+class io.github.aaronclong.TypeInformation.UnitCorn.StubUnitTest FAIL

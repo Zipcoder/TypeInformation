@@ -1,0 +1,3 @@
+class java.lang.Object
+  class java.lang.Number
+    class java.lang.Integer
