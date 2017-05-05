@@ -10,7 +10,7 @@ public class TestFamilyTree{
     @Test
     public void testClassImplementsInterfaceReturnType() throws ClassNotFoundException {
         //Given
-        FamilyTree familyTree = new FamilyTree("java.util.ArrayList");
+        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.ArrayList"));
         Class expectedReturnType = Boolean.class;
         //When
         Class returnType = familyTree.classImplementsInterface("java.util.List").getClass();
@@ -21,7 +21,7 @@ public class TestFamilyTree{
     @Test
     public void testClassImplementsInterface() throws ClassNotFoundException {
         //Given
-        FamilyTree familyTree = new FamilyTree("java.util.ArrayList");
+        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.ArrayList"));
         boolean expectedOutcome = true;
         //When
         Boolean methodOutcome = familyTree.classImplementsInterface("java.util.List");
@@ -32,19 +32,19 @@ public class TestFamilyTree{
     @Test
     public void testGetClassHierarchyReturnType() throws ClassNotFoundException {
         //Given
-        FamilyTree familyTree = new FamilyTree("java.util.AbstractList<E>");
+        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.AbstractList"));
         Class expectedReturnType = String.class;
         //When
-        Class returnType = familyTree.getClassHierarchy("java.util.List").getClass();
+        Class returnType = familyTree.getClassHierarchy().getClass();
         //Then
         Assert.assertEquals("Method is returning the wrong data type", expectedReturnType, returnType);
     }
 
     @Test
-    public void testGetClassHierarchy() {
+    public void testGetClassHierarchy() throws ClassNotFoundException {
         //Given
-        FamilyTree familyTree = new FamilyTree("java.util.AbstractList<E>");
-        String expectedValue = "java.lang.Object" + "\n" + "  " + "java.util.AbstractCollection<E>" + "\n" + "    " + "java.util.AbstractList<E>";
+        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.AbstractList"));
+        String expectedValue = "java.lang.Object" + "\n" + "  " + "java.util.AbstractCollection" + "\n" + "    " + "java.util.AbstractList" + "\n";
         //When
         String returnValue = familyTree.getClassHierarchy();
         //Then
