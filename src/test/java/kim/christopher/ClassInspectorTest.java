@@ -3,8 +3,10 @@ package kim.christopher;
 import org.junit.Before;
 import org.junit.Test;
 
-import java.lang.reflect.Array;
+import java.io.File;
+import java.io.FileWriter;
 import java.util.ArrayList;
+import java.util.List;
 
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertTrue;
@@ -14,13 +16,14 @@ public class ClassInspectorTest {
     ClassInspector inspector;
     Integer i;
     Class c;
-
+    ArrayList<String> s;
 
     @Before
     public void initialize() {
         inspector = new ClassInspector();
         i = new Integer(0);
         c = ArrayList.class;
+        s = new ArrayList<String>();
     }
 
     @Test
@@ -109,7 +112,7 @@ public class ClassInspectorTest {
     public void instantiateClassHierarchyTest(){
 
         //: When
-        ArrayList<Object> result = inspector.instantiateClassHierarchy(i);                                                                                                                                                                                                                                                                                                                                                                                 = inspector.instantiateClassHierarchy(i);
+        List<Object> result = inspector.instantiateClassHierarchy(s);
 
         //: Then
         assertTrue(!result.get(0).getClass().equals(result.get(1).getClass()));

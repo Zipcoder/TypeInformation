@@ -6,6 +6,8 @@ import java.lang.reflect.Method;
 import java.lang.reflect.Modifier;
 import java.util.ArrayList;
 import java.lang.Class;
+import java.util.Collections;
+import java.util.List;
 
 public class ClassInspector {
 
@@ -77,7 +79,8 @@ public class ClassInspector {
         while(flag){
             list.add(classOfObject.getSuperclass().getSimpleName());
             classOfObject = classOfObject.getSuperclass();
-            if(classOfObject.getSimpleName().equals("Object")) flag = false;
+            if(classOfObject.getSimpleName().equals("Object"))
+                flag = false;
         }
         //counter for number of spaces to add at the beginning of the line
         int count = 1;
@@ -100,11 +103,25 @@ public class ClassInspector {
     // Note: Your test should confirm that each list item is an instance of a different class.
     public ArrayList<Object> instantiateClassHierarchy(Object obj){
 
-//        Class c = obj.getClass();
-//        boolean flag = true;
-//        ArrayList<Object>
-//        while(flag){
-//
-//        }
+        Class c = obj.getClass();
+        ArrayList<Class> list = new ArrayList<Class>();
+        while (c != null) {
+            list.add(c);
+            c = c.getSuperclass();
+        }
+
+        Collections.reverse(list);
+
+        ArrayList<Object> objList = new ArrayList<Object>();
+        for(int i = 0; i < list.size(); i++){
+            try{
+                objList.add(list.get(i).newInstance());
+            } catch (InstantiationException e){
+                System.out.println(list.get(i).getSimpleName() + " did not have a no-args constructor and could not be instantiated");
+            } catch (IllegalAccessException e){
+                System.out.println(list.get(i).getSimpleName() + " was not able to be accessed");
+            }
+        }
+        return objList;
     }
 }
