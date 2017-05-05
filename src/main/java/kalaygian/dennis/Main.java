@@ -1,4 +1,4 @@
-package java.kalaygian.dennis;
+package kalaygian.dennis;
 
 
 public class Main

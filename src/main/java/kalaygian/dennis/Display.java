@@ -1,4 +1,4 @@
-package java.kalaygian.dennis;
+package kalaygian.dennis;
 
 /**
  * Created by denniskalaygian on 5/5/17.
