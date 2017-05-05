@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="9f26267d-126c-432d-9cb9-f76ed04d6d91" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/garcia/luis/typeinformation/Main.java" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/garcia/luis/typeinformation/TypeInformation.java" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/TestTypeInformation.java" afterPath="$PROJECT_DIR$/src/test/java/TestTypeInformation.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypeInformation.iml" afterPath="$PROJECT_DIR$/TypeInformation.iml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java" afterPath="$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -29,8 +30,8 @@
       <file leaf-file-name="TypeInformation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/garcia/luis/TypeInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+            <state relative-caret-position="-1258">
+              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2135#2143#0" expanded="true" />
@@ -43,12 +44,21 @@
       <file leaf-file-name="UnitCornTestRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+            <state relative-caret-position="174">
+              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
               <folding>
                 <element signature="imports" expanded="true" />
-                <element signature="e#401#409#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="105">
+              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -56,9 +66,23 @@
       <file leaf-file-name="TestTypeInformation.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestTypeInformation.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-              <folding />
+            <state relative-caret-position="-105">
+              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="32" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="TestUnitCornTestRunner.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/test/java/TestUnitCornTestRunner.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="422">
+              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -90,6 +114,8 @@
         <option value="$PROJECT_DIR$/src/main/java/garcia/luis/typeinformation/Main.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestTypeInformation.java" />
         <option value="$PROJECT_DIR$/src/main/java/garcia/luis/TypeInformation.java" />
+        <option value="$PROJECT_DIR$/src/test/java/TestUnitCornTestRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/unitcorn/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java" />
       </list>
     </option>
@@ -242,28 +268,7 @@
     <property name="js.eslint.eslintPackage" value="" />
     <property name="js-jscs-nodeInterpreter" value="/usr/local/bin/node" />
   </component>
-  <component name="RunManager" selected="JUnit.TestTypeInformation.testHierarchy">
-    <configuration default="false" name="TestTypeInformation.testImplementsInterface" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <module name="TypeInformation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTypeInformation" />
-      <option name="METHOD_NAME" value="testImplementsInterface" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
+  <component name="RunManager" selected="JUnit.TestUnitCornTestRunner.testRunTestNoResults">
     <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -284,14 +289,14 @@
       <envs />
       <method />
     </configuration>
-    <configuration default="false" name="TestTypeInformation.testListAllMembers" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestTypeInformation.testHierarchy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TypeInformation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="TestTypeInformation" />
-      <option name="METHOD_NAME" value="testListAllMembers" />
+      <option name="METHOD_NAME" value="testHierarchy" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -305,14 +310,55 @@
       <patterns />
       <method />
     </configuration>
-    <configuration default="false" name="TestTypeInformation.testHierarchy" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="false" name="TestUnitCornTestRunner.testRunTests" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
       <module name="TypeInformation" />
       <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
       <option name="ALTERNATIVE_JRE_PATH" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="TestTypeInformation" />
-      <option name="METHOD_NAME" value="testHierarchy" />
+      <option name="MAIN_CLASS_NAME" value="TestUnitCornTestRunner" />
+      <option name="METHOD_NAME" value="testRunTests" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="UnitCornTestRunner" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="unitcorn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="unitcorn.UnitCornTestRunner" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TypeInformation" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestUnitCornTestRunner.testRunTestNoResults" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <module name="TypeInformation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="TestUnitCornTestRunner" />
+      <option name="METHOD_NAME" value="testRunTestNoResults" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -699,18 +745,20 @@
     <configuration default="true" type="osgi.bnd.run" factoryName="Test Launcher (JUnit)">
       <method />
     </configuration>
-    <list size="4">
-      <item index="0" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testImplementsInterface" />
-      <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testListAllMembers" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testHierarchy" />
+    <list size="5">
+      <item index="0" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testHierarchy" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.testRunTests" />
+      <item index="3" class="java.lang.String" itemvalue="Application.UnitCornTestRunner" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.testRunTestNoResults" />
     </list>
     <recent_temporary>
-      <list size="4">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testHierarchy" />
-        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testListAllMembers" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testImplementsInterface" />
+      <list size="5">
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.testRunTestNoResults" />
+        <item index="1" class="java.lang.String" itemvalue="JUnit.TestUnitCornTestRunner.testRunTests" />
+        <item index="2" class="java.lang.String" itemvalue="Application.UnitCornTestRunner" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestTypeInformation.testHierarchy" />
+        <item index="4" class="java.lang.String" itemvalue="Application.Main" />
       </list>
     </recent_temporary>
   </component>
@@ -724,44 +772,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493914264146</updated>
-      <workItem from="1493914265890" duration="33444000" />
+      <workItem from="1493914265890" duration="44288000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 06m 16s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTestNoResults - 2017.05.05 at 16h 35m 07s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTestNoResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 31m 54s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTestNoResults - 2017.05.05 at 16h 36m 12s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTestNoResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 36m 40s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 02m 02s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 38m 10s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 02m 36s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 39m 02s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 03m 31s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 39m 37s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 04m 50s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 40m 18s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 09m 24s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 41m 52s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 25m 36s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 42m 20s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 28m 13s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestTypeInformation_testHierarchy - 2017.05.05 at 12h 53m 14s.xml">
-      <configuration name="TestTypeInformation.testHierarchy" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 29m 32s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33444000" />
+    <option name="totallyTimeSpent" value="44288000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1680" height="959" extended-state="6" />
@@ -770,7 +818,7 @@
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32888147" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
@@ -807,7 +855,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <option name="time" value="17" />
     </breakpoint-manager>
     <watches-manager>
       <configuration name="Application">
@@ -847,16 +895,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestTypeInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="32" lean-forward="true" selection-start-line="5" selection-start-column="32" selection-end-line="5" selection-end-column="32" />
-          <folding />
+        <state relative-caret-position="-105">
+          <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="32" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/garcia/luis/TypeInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="16" column="23" lean-forward="true" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
+        <state relative-caret-position="-1258">
+          <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2135#2143#0" expanded="true" />
@@ -865,13 +915,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/TestUnitCornTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="15" column="12" lean-forward="false" selection-start-line="15" selection-start-column="12" selection-end-line="15" selection-end-column="12" />
+        <state relative-caret-position="422">
+          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
-            <element signature="e#401#409#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="105">
+          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="174">
+          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+          <folding>
+            <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
