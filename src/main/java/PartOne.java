@@ -1,8 +1,7 @@
-import javax.naming.ldap.BasicControl;
-import java.awt.*;
-import java.math.BigDecimal;
+import java.lang.reflect.Array;
 import java.util.ArrayList;
-import java.util.Currency;
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * Created by anthonyjones on 5/4/17.
@@ -48,10 +47,33 @@ public class PartOne {
 
     public String getClassHierarchy(Object classObject) {
 
-        for (int i = 0; i < 3; i++) {
-//            classObject.getClass().
-            System.out.println(classObject.getClass().getSuperclass());
+        Object holdObject = classObject;
+        Object C = classObject.getClass();
+
+        List<Object> listOfMethods = new ArrayList<>();
+
+        System.out.println(classObject.getClass().getSuperclass().getClasses().length);
+        for (int i = 0; C != null; i++) {
+            listOfMethods.add(holdObject);// classObject
+//            System.out.println(holdObject);
+            holdObject = listOfMethods.get(i).getClass().getSuperclass();
+
+            C = C.getClass().getSuperclass();
+
         }
+
+
+        // System.out.println(listOfMethods.get(2));
+
+        // System.out.println(listOfMethods.stream().distinct().collect(Collectors.toList()));
+
+
+        //holdObject = classObject.getClass().getMethods()[i].getDeclaringClass().getSimpleName();
+
+//
+//          String[] a= listOfMethods.stream().distinct().collect(Collectors.toList()).toString().split(" ");
+//            System.out.println(a[0]);
+//            System.out.println(listOfMethods.stream().distinct().collect(Collectors.toList()));
 
 
         return "";

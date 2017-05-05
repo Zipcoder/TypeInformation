@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="98fb361b-0cdb-43c5-8a97-65c993771893" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypeInformation.iml" afterPath="$PROJECT_DIR$/TypeInformation.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/PartOne.java" afterPath="$PROJECT_DIR$/src/main/java/PartOne.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/testPartOne.java" afterPath="$PROJECT_DIR$/src/test/java/testPartOne.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -51,8 +46,8 @@
       <file leaf-file-name="PartOne.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/PartOne.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="515">
-              <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+            <state relative-caret-position="450">
+              <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -719,44 +714,44 @@
       <option name="presentableId" value="Default" />
       <updated>1493925013918</updated>
       <workItem from="1493925015773" duration="15087000" />
-      <workItem from="1493940972888" duration="8134000" />
+      <workItem from="1493940972888" duration="18040000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 43m 23s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 18m 10s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 46m 00s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 19m 17s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 55m 40s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 19m 41s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 55m 47s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 20m 49s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 55m 54s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 21m 28s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 56m 02s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 21m 34s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 56m 33s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 26m 12s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 56m 41s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 27m 04s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 57m 42s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 30m 50s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 07h 59m 51s.xml">
+    <history-entry file="testPartOne_testGetClassHierarchy - 2017.05.05 at 14h 34m 51s.xml">
       <configuration name="testPartOne.testGetClassHierarchy" configurationId="JUnit" />
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="23221000" />
+    <option name="totallyTimeSpent" value="33127000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -859,8 +854,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/PartOne.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="515">
-          <caret line="51" column="28" lean-forward="false" selection-start-line="51" selection-start-column="28" selection-end-line="51" selection-end-column="28" />
+        <state relative-caret-position="450">
+          <caret line="57" column="24" lean-forward="false" selection-start-line="57" selection-start-column="24" selection-end-line="57" selection-end-column="24" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
