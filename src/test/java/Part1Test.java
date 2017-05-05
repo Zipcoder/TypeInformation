@@ -3,11 +3,8 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.io.Serializable;
-import java.text.Collator;
 import java.util.ArrayList;
-import java.util.Comparator;
-import java.util.Currency;
-import java.util.List;
+
 
 /**
  * Created by aurorabanuelos on 5/4/17.
@@ -31,6 +28,7 @@ public class Part1Test {
 
 //    @Test
 //    public void listAllMembersTest(){
+//
 //        //Given
 //        Part1 part1 = new Part1();
 //        Class cls = ArrayList.class;
