@@ -3,8 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="9f26267d-126c-432d-9cb9-f76ed04d6d91" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/TypeInformation.iml" afterPath="$PROJECT_DIR$/TypeInformation.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/unitcorn/Result.java" afterPath="$PROJECT_DIR$/src/main/java/unitcorn/Result.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java" afterPath="$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
@@ -27,47 +26,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="TypeInformation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/garcia/luis/TypeInformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1258">
-              <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
-              <folding>
-                <element signature="imports" expanded="true" />
-                <element signature="e#2135#2143#0" expanded="true" />
-                <element signature="e#2624#2632#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="UnitCornTestRunner.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="174">
-              <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/Result.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="TestTypeInformation.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/test/java/TestTypeInformation.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-105">
-              <caret line="11" column="32" lean-forward="false" selection-start-line="11" selection-start-column="13" selection-end-line="11" selection-end-column="32" />
+            <state relative-caret-position="60">
+              <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -78,11 +41,21 @@
       <file leaf-file-name="TestUnitCornTestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/TestUnitCornTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="422">
-              <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+            <state relative-caret-position="105">
+              <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/Result.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+              <folding />
             </state>
           </provider>
         </entry>
@@ -115,8 +88,8 @@
         <option value="$PROJECT_DIR$/src/test/java/TestTypeInformation.java" />
         <option value="$PROJECT_DIR$/src/main/java/garcia/luis/TypeInformation.java" />
         <option value="$PROJECT_DIR$/src/test/java/TestUnitCornTestRunner.java" />
-        <option value="$PROJECT_DIR$/src/main/java/unitcorn/Result.java" />
         <option value="$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java" />
+        <option value="$PROJECT_DIR$/src/main/java/unitcorn/Result.java" />
       </list>
     </option>
   </component>
@@ -128,8 +101,8 @@
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
-    <option name="width" value="1680" />
-    <option name="height" value="959" />
+    <option name="width" value="1280" />
+    <option name="height" value="717" />
   </component>
   <component name="ProjectView">
     <navigator currentView="ProjectPane" proportions="" version="1">
@@ -772,7 +745,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1493914264146</updated>
-      <workItem from="1493914265890" duration="44288000" />
+      <workItem from="1493914265890" duration="50575000" />
     </task>
     <servers />
   </component>
@@ -783,23 +756,11 @@
     <history-entry file="TestUnitCornTestRunner_testRunTestNoResults - 2017.05.05 at 16h 36m 12s.xml">
       <configuration name="TestUnitCornTestRunner.testRunTestNoResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 02m 02s.xml">
-      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTestNoResults - 2017.05.05 at 17h 21m 34s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTestNoResults" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 02m 36s.xml">
-      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 03m 31s.xml">
-      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 04m 50s.xml">
-      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 09m 24s.xml">
-      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 25m 36s.xml">
-      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
+    <history-entry file="TestUnitCornTestRunner_testRunTestNoResults - 2017.05.06 at 12h 43m 54s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTestNoResults" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 28m 13s.xml">
       <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
@@ -807,31 +768,43 @@
     <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 16h 29m 32s.xml">
       <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 17h 19m 20s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 17h 44m 19s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.05 at 17h 54m 53s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestUnitCornTestRunner_testRunTests - 2017.05.06 at 12h 41m 04s.xml">
+      <configuration name="TestUnitCornTestRunner.testRunTests" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44288000" />
+    <option name="totallyTimeSpent" value="50575000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1680" height="959" extended-state="6" />
+    <frame x="0" y="23" width="1280" height="717" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Nl-Palette" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32818073" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32656515" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32936978" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.4624374" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.03052503" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
+      <window_info id="Coverage" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.040387724" sideWeight="0.5" order="-1" side_tool="true" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24969475" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.226979" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -905,7 +878,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/garcia/luis/TypeInformation.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-1258">
+        <state relative-caret-position="-240">
           <caret line="16" column="23" lean-forward="false" selection-start-line="16" selection-start-column="23" selection-end-line="16" selection-end-column="23" />
           <folding>
             <element signature="imports" expanded="true" />
@@ -915,28 +888,28 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/Result.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="22" column="44" lean-forward="false" selection-start-line="22" selection-start-column="44" selection-end-line="22" selection-end-column="44" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/TestUnitCornTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="422">
-          <caret line="41" column="0" lean-forward="false" selection-start-line="41" selection-start-column="0" selection-end-line="41" selection-end-column="0" />
+        <state relative-caret-position="105">
+          <caret line="7" column="35" lean-forward="true" selection-start-line="7" selection-start-column="35" selection-end-line="7" selection-end-column="35" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/Result.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/unitcorn/UnitCornTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="174">
-          <caret line="18" column="20" lean-forward="false" selection-start-line="18" selection-start-column="20" selection-end-line="18" selection-end-column="20" />
+        <state relative-caret-position="60">
+          <caret line="40" column="0" lean-forward="false" selection-start-line="40" selection-start-column="0" selection-end-line="40" selection-end-column="0" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

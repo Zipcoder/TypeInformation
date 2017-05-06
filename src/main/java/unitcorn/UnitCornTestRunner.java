@@ -5,6 +5,7 @@ import org.junit.Assert;
 import org.junit.Test;
 
 import java.lang.annotation.Annotation;
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 import java.util.ArrayList;
 
@@ -14,10 +15,20 @@ import java.util.ArrayList;
  */
 public class UnitCornTestRunner
 {
-    public void runTest(Class c, String methodName)
+    public Result runTest(Class c, String methodName)
     {
-        c.getMethod()
 
+        boolean pass = false;
+        try {
+            Method m = c.getMethod(methodName);
+            Object obj = c.newInstance();
+            pass = methodPass(m, obj);
+
+        }catch (Exception e){
+            System.err.println(e.getMessage());
+        }
+        Result myResult = new Result(pass,methodName, c.getName());
+        return myResult;
     }
 
     public String runTests(Class c)
@@ -28,7 +39,6 @@ public class UnitCornTestRunner
                     if(methods[i].isAnnotationPresent(Test.class))
                     {
                         runTest(c, methods[i].getName());
-                        System.out.println(printAnnotations(methods[i]));
                         return printAnnotations(methods[i]);
                     }
                 }
@@ -51,12 +61,25 @@ public class UnitCornTestRunner
         return "Fuck";
     }
 
+    public boolean methodPass(Method method, Object obj)
+    {
+        boolean pass = false;
+        try {
+            method.invoke(obj);
+            pass = true;
+        } catch (IllegalAccessException e) {
+            e.printStackTrace();
+        } catch (InvocationTargetException e) {
+            e.printStackTrace();
+        }
+        return pass;
+    }
+
     public static void main(String[] args)
     {
         UnitCornTestRunner tester = new UnitCornTestRunner();
         Double adouble = 2.332;
 //        Class aclass =
-//        tester.runTests(Test.class);
 
     }
 
