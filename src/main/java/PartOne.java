@@ -1,8 +1,5 @@
-import java.awt.*;
-import java.lang.reflect.Array;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.stream.Collectors;
 
 /**
  * Created by anthonyjones on 5/4/17.
@@ -65,6 +62,17 @@ public class PartOne {
         }
 
         return "";
+    }
+
+
+    public ArrayList instantiateClassHierarchy(Object o) {
+
+        ArrayList<Object> emptyList = new ArrayList<>();
+        ArrayList<Object> listOfConcreteClasses = new ArrayList<>();
+
+
+
+        return emptyList;
     }
 
 }

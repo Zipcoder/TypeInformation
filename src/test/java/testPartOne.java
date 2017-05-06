@@ -3,10 +3,6 @@ import org.junit.Test;
 
 import java.awt.*;
 import java.io.Serializable;
-import java.lang.reflect.Array;
-import java.lang.reflect.Field;
-import java.math.BigDecimal;
-import java.math.BigInteger;
 import java.util.ArrayList;
 import java.util.Currency;
 
@@ -56,8 +52,26 @@ public class testPartOne {
         String actualAnswer = testing.getClassHierarchy(objectName);
 
         //then
-        Assert.assertEquals(expectedString,actualAnswer);
+        Assert.assertEquals(expectedString, actualAnswer);
 
+    }
+
+    @Test
+    public void testInstantiateClassHierarchy() {
+        //given
+
+        Object objectName = new ArrayList();
+        ArrayList<Object> listOfConcreteClasses = new ArrayList();
+        PartOne testing = new PartOne();
+        listOfConcreteClasses.add(objectName);
+        ArrayList expectedAnswer = listOfConcreteClasses;
+
+        //when
+
+        ArrayList actualAnswer = testing.instantiateClassHierarchy(objectName);
+
+        //then
+        Assert.assertEquals(actualAnswer, expectedAnswer);
 
     }
 
