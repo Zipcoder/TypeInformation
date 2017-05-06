@@ -5,7 +5,9 @@ import java.util.ArrayList;
 public class Main
 {
     public static void main( String[] args ) throws ClassNotFoundException {
-        FamilyTree familyTree = new FamilyTree(ArrayList.class);
-        System.out.println(familyTree.getClassHierarchy());
+        ArrayList<String> th = new ArrayList<String>();
+        String element = "haha";
+        th.add(element);
+        System.out.println(th);
     }
 }

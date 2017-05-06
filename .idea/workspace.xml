@@ -2,15 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="f866ae3e-8de2-45a3-84dc-062d8d7eef60" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/kalaygian/dennis/Display.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/kalaygian/dennis/FamilyTree.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/kalaygian/dennis/Main.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/test-classes/kalaygian/dennis/TestFamilyTree.class" afterPath="" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/Display.java" afterPath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Display.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/FamilyTree.java" afterPath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/FamilyTree.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/Main.java" afterPath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Main.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/test/java/kalaygian/dennis/TestFamilyTree.java" afterPath="$PROJECT_DIR$/src/test/java/kalaygian/dennis/testpart1/TestFamilyTree.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Main.java" afterPath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Main.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/unitcorn/Result.java" afterPath="$PROJECT_DIR$/src/main/java/kalaygian/dennis/unitcorn/Result.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestResult.java" afterPath="$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestResult.java" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -35,9 +29,11 @@
       <file leaf-file-name="Main.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="60">
-              <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-              <folding />
+            <state relative-caret-position="135">
+              <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+              <folding>
+                <element signature="e#203#211#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -58,9 +54,17 @@
       <file leaf-file-name="Result.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/kalaygian/dennis/unitcorn/Result.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
-              <folding />
+            <state relative-caret-position="210">
+              <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+              <folding>
+                <element signature="e#195#196#0" expanded="true" />
+                <element signature="e#244#245#0" expanded="true" />
+                <element signature="e#319#320#0" expanded="true" />
+                <element signature="e#357#358#0" expanded="true" />
+                <element signature="e#387#388#0" expanded="true" />
+                <element signature="e#422#423#0" expanded="true" />
+                <element signature="e#465#466#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -75,21 +79,24 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestResult.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="TestResult.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestResult.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="75">
-              <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-              <folding />
+            <state relative-caret-position="298">
+              <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+              <folding>
+                <element signature="imports" expanded="true" />
+                <element signature="e#383#391#0" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="TestUnitCornTestRunner.java" pinned="false" current-in-tab="true">
+      <file leaf-file-name="TestUnitCornTestRunner.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestUnitCornTestRunner.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="75">
-              <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
+              <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
               <folding />
             </state>
           </provider>
@@ -160,6 +167,8 @@
         <option value="$PROJECT_DIR$/src/test/java/kalaygian/dennis/TestFamilyTree.java" />
         <option value="$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Display.java" />
         <option value="$PROJECT_DIR$/src/test/java/kalaygian/dennis/testpart1/TestFamilyTree.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/kalaygian/dennis/unitcorn/Result.java" />
         <option value="$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestResult.java" />
       </list>
     </option>
@@ -344,6 +353,10 @@
               <option name="myItemId" value="dennis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="part1" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
@@ -377,7 +390,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.TestFamilyTree.testInstantiateClassHierarchy">
+  <component name="RunManager" selected="JUnit.TestResult">
     <configuration default="false" name="TestFamilyTree.testInstantiateClassHierarchyReturnType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
         <pattern>
@@ -391,58 +404,6 @@
       <option name="PACKAGE_NAME" value="kalaygian.dennis.testpart1" />
       <option name="MAIN_CLASS_NAME" value="kalaygian.dennis.testpart1.TestFamilyTree" />
       <option name="METHOD_NAME" value="testInstantiateClassHierarchyReturnType" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestFamilyTree.testClassImplementsInterface" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="kalaygian.dennis.testpart1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TypeInformation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="kalaygian.dennis.testpart1" />
-      <option name="MAIN_CLASS_NAME" value="kalaygian.dennis.testpart1.TestFamilyTree" />
-      <option name="METHOD_NAME" value="testClassImplementsInterface" />
-      <option name="TEST_OBJECT" value="method" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <envs />
-      <patterns />
-      <method />
-    </configuration>
-    <configuration default="false" name="TestFamilyTree.testGetClassHierarchyReturnType" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
-        <pattern>
-          <option name="PATTERN" value="kalaygian.dennis.testpart1.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <module name="TypeInformation" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="kalaygian.dennis.testpart1" />
-      <option name="MAIN_CLASS_NAME" value="kalaygian.dennis.testpart1.TestFamilyTree" />
-      <option name="METHOD_NAME" value="testGetClassHierarchyReturnType" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -496,6 +457,52 @@
       <option name="MAIN_CLASS_NAME" value="kalaygian.dennis.testpart1.TestFamilyTree" />
       <option name="METHOD_NAME" value="testInstantiateClassHierarchy" />
       <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <envs />
+      <patterns />
+      <method />
+    </configuration>
+    <configuration default="false" name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kalaygian.dennis.part1.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="MAIN_CLASS_NAME" value="kalaygian.dennis.part1.Main" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="TypeInformation" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="false" name="TestResult" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea">
+        <pattern>
+          <option name="PATTERN" value="kalaygian.dennis.testunitcorn.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <module name="TypeInformation" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="kalaygian.dennis.testunitcorn" />
+      <option name="MAIN_CLASS_NAME" value="kalaygian.dennis.testunitcorn.TestResult" />
+      <option name="METHOD_NAME" />
+      <option name="TEST_OBJECT" value="class" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="$MODULE_DIR$" />
@@ -919,18 +926,18 @@
     </configuration>
     <list size="5">
       <item index="0" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testInstantiateClassHierarchyReturnType" />
-      <item index="1" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testClassImplementsInterface" />
-      <item index="2" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testGetClassHierarchyReturnType" />
-      <item index="3" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testGetClassHierarchy" />
-      <item index="4" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testInstantiateClassHierarchy" />
+      <item index="1" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testGetClassHierarchy" />
+      <item index="2" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testInstantiateClassHierarchy" />
+      <item index="3" class="java.lang.String" itemvalue="Application.Main" />
+      <item index="4" class="java.lang.String" itemvalue="JUnit.TestResult" />
     </list>
     <recent_temporary>
       <list size="5">
-        <item index="0" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testInstantiateClassHierarchy" />
-        <item index="1" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testInstantiateClassHierarchyReturnType" />
-        <item index="2" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testGetClassHierarchy" />
-        <item index="3" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testGetClassHierarchyReturnType" />
-        <item index="4" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testClassImplementsInterface" />
+        <item index="0" class="java.lang.String" itemvalue="JUnit.TestResult" />
+        <item index="1" class="java.lang.String" itemvalue="Application.Main" />
+        <item index="2" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testInstantiateClassHierarchy" />
+        <item index="3" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testInstantiateClassHierarchyReturnType" />
+        <item index="4" class="java.lang.String" itemvalue="JUnit.TestFamilyTree.testGetClassHierarchy" />
       </list>
     </recent_temporary>
   </component>
@@ -950,7 +957,7 @@
       <workItem from="1493987542068" duration="1020000" />
       <workItem from="1494007123116" duration="11048000" />
       <workItem from="1494032505975" duration="250000" />
-      <workItem from="1494083828011" duration="7107000" />
+      <workItem from="1494083828011" duration="8130000" />
     </task>
     <servers />
   </component>
@@ -967,16 +974,10 @@
     <history-entry file="TestFamilyTree_testGetClassHierarchyReturnType - 2017.05.06 at 14h 27m 38s.xml">
       <configuration name="TestFamilyTree.testGetClassHierarchyReturnType" configurationId="JUnit" />
     </history-entry>
-    <history-entry file="TestFamilyTree_testInstantiateClassHierarchy - 2017.05.06 at 13h 15m 33s.xml">
-      <configuration name="TestFamilyTree.testInstantiateClassHierarchy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFamilyTree_testInstantiateClassHierarchy - 2017.05.06 at 13h 48m 05s.xml">
-      <configuration name="TestFamilyTree.testInstantiateClassHierarchy" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="TestFamilyTree_testInstantiateClassHierarchy - 2017.05.06 at 14h 17m 35s.xml">
-      <configuration name="TestFamilyTree.testInstantiateClassHierarchy" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="TestFamilyTree_testInstantiateClassHierarchy - 2017.05.06 at 14h 27m 51s.xml">
+      <configuration name="TestFamilyTree.testInstantiateClassHierarchy" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestFamilyTree_testInstantiateClassHierarchy - 2017.05.06 at 14h 38m 48s.xml">
       <configuration name="TestFamilyTree.testInstantiateClassHierarchy" configurationId="JUnit" />
     </history-entry>
     <history-entry file="TestFamilyTree_testInstantiateClassHierarchyReturnType - 2017.05.06 at 14h 17m 46s.xml">
@@ -985,12 +986,19 @@
     <history-entry file="TestFamilyTree_testInstantiateClassHierarchyReturnType - 2017.05.06 at 14h 27m 45s.xml">
       <configuration name="TestFamilyTree.testInstantiateClassHierarchyReturnType" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="TestResult - 2017.05.06 at 14h 46m 55s.xml">
+      <configuration name="TestResult" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="TestResult - 2017.05.06 at 14h 47m 43s.xml">
+      <configuration name="TestResult" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20083000" />
+    <option name="totallyTimeSpent" value="21106000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-46" y="-768" width="1366" height="768" extended-state="0" />
+    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1002,12 +1010,12 @@
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.32805756" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Properties" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22767204" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3296875" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -1044,7 +1052,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="105">
           <caret line="7" column="29" lean-forward="false" selection-start-line="7" selection-start-column="19" selection-end-line="7" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="e#203#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1090,7 +1100,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#203#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1136,7 +1148,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="45">
           <caret line="3" column="13" lean-forward="false" selection-start-line="3" selection-start-column="13" selection-end-line="3" selection-end-column="13" />
-          <folding />
+          <folding>
+            <element signature="e#203#211#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1202,14 +1216,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="13" lean-forward="false" selection-start-line="4" selection-start-column="13" selection-end-line="4" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/FamilyTree.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -1240,10 +1246,20 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/kalaygian/dennis/unitcorn/Result.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kalaygian/dennis/part1/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="135">
+          <caret line="9" column="13" lean-forward="false" selection-start-line="9" selection-start-column="13" selection-end-line="9" selection-end-column="13" />
+          <folding>
+            <element signature="e#203#211#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestUnitCornTestRunner.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
-          <caret line="5" column="19" lean-forward="false" selection-start-line="5" selection-start-column="19" selection-end-line="5" selection-end-column="19" />
+          <caret line="5" column="37" lean-forward="true" selection-start-line="5" selection-start-column="37" selection-end-line="5" selection-end-column="37" />
           <folding />
         </state>
       </provider>
@@ -1256,19 +1272,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestResult.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/kalaygian/dennis/unitcorn/Result.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="23" lean-forward="false" selection-start-line="5" selection-start-column="23" selection-end-line="5" selection-end-column="23" />
-          <folding />
+        <state relative-caret-position="210">
+          <caret line="14" column="43" lean-forward="false" selection-start-line="14" selection-start-column="43" selection-end-line="14" selection-end-column="43" />
+          <folding>
+            <element signature="e#195#196#0" expanded="true" />
+            <element signature="e#244#245#0" expanded="true" />
+            <element signature="e#319#320#0" expanded="true" />
+            <element signature="e#357#358#0" expanded="true" />
+            <element signature="e#387#388#0" expanded="true" />
+            <element signature="e#422#423#0" expanded="true" />
+            <element signature="e#465#466#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestUnitCornTestRunner.java">
+    <entry file="file://$PROJECT_DIR$/src/test/java/kalaygian/dennis/testunitcorn/TestResult.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="75">
-          <caret line="5" column="35" lean-forward="false" selection-start-line="5" selection-start-column="35" selection-end-line="5" selection-end-column="35" />
-          <folding />
+        <state relative-caret-position="298">
+          <caret line="22" column="5" lean-forward="true" selection-start-line="22" selection-start-column="5" selection-end-line="22" selection-end-column="5" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#383#391#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
