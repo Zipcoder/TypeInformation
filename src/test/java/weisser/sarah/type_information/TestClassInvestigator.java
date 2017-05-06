@@ -59,6 +59,27 @@ public class TestClassInvestigator {
         Assert.assertEquals(expectedResult, actualResult);
     }
 
+    @Test
+    public void testClassImplementsInterfaceWithClassObject() {
+
+        //given
+        try {
+            Class cl = Class.forName("java.lang.String");
+            ClassInvestigator investigator = new ClassInvestigator(cl);
+            String[] objectInterfaces = investigator.getObjectInterfaces();
+            boolean expectedResult = true;
+
+            //when
+            boolean actualResult = investigator.classImplementsInterface(cl, "interface java.io.Serializable");
+
+            //then
+            Assert.assertEquals(expectedResult, actualResult);
+
+        } catch (ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+    }
+
 
 
 }
