@@ -2,7 +2,6 @@ import com.sun.org.apache.xpath.internal.operations.Bool;
 import org.junit.Assert;
 import org.junit.Test;
 
-import java.io.PrintStream;
 import java.io.Serializable;
 import java.lang.reflect.Array;
 import java.util.AbstractCollection;
@@ -43,21 +42,19 @@ public class Part1Test {
 
     }
 
-//    @Test
-//    public void listAllMembersTest(){
-//
-//        //Given
-//        Part1 part1 = new Part1();
-//        Class cls = ArrayList.class;
-//
-//        String expectedResult = "  ";
-//
-//        //When
-//        String actualResult = part1.listAllMembers();
-//
-//        //Then
-//        Assert.assertEquals(expectedResult, actualResult);
-//
-//    }
+    @Test
+    public void listAllMembersTest(){
+
+        //Given
+        Part1 part1 = new Part1();
+        Class cls = Object.class;
+
+        //When
+        String actualResult = part1.listAllMembers(cls);
+
+        //Then
+        Assert.assertEquals("", actualResult);
+
+    }
 
 }
