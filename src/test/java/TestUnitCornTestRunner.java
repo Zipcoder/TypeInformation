@@ -1,5 +1,6 @@
 import org.junit.Assert;
 import org.junit.Test;
+import unitcorn.Result;
 import unitcorn.UnitCornTestRunner;
 
 /**
@@ -34,6 +35,23 @@ public class TestUnitCornTestRunner
 
         //when
         String actual = tester.runTests(aClass);
+
+        //then
+        Assert.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void testRunTest()
+    {
+        TestUnitCornTestRunner paco = new TestUnitCornTestRunner();
+        String  myMethod = tester.runTests(paco.getClass());
+
+        //given
+        Result myResult = tester.runTest(paco.getClass(), myMethod);
+        boolean expected = false;
+
+        //when
+        boolean actual = myResult.getPass();
 
         //then
         Assert.assertEquals(expected, actual);

@@ -16,6 +16,11 @@ public class Result
         this.theClass = theClass;
     }
 
+    public boolean getPass()
+    {
+        return pass;
+    }
+
     public void printResutl()
     {
         System.out.println("Class Tested: " + theClass);

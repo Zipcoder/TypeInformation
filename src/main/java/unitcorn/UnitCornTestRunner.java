@@ -75,12 +75,5 @@ public class UnitCornTestRunner
         return pass;
     }
 
-    public static void main(String[] args)
-    {
-        UnitCornTestRunner tester = new UnitCornTestRunner();
-        Double adouble = 2.332;
-//        Class aclass =
-
-    }
 
 }
