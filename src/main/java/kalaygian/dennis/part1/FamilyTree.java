@@ -1,4 +1,4 @@
-package kalaygian.dennis;
+package kalaygian.dennis.part1;
 import java.util.ArrayList;
 import java.lang.reflect.AccessibleObject;
 import java.lang.reflect.Constructor;

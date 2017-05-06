@@ -1,12 +1,10 @@
-package kalaygian.dennis;
+package kalaygian.dennis.testpart1;
 
+import kalaygian.dennis.part1.FamilyTree;
 import org.junit.Test;
 import org.junit.Assert;
 
-import java.util.AbstractCollection;
-import java.util.AbstractList;
 import java.util.ArrayList;
-import java.util.List;
 
 
 public class TestFamilyTree{
@@ -101,9 +99,9 @@ public class TestFamilyTree{
         expectedList.add(element3);
         expectedList.add(element2);
         expectedList.add(element1);
-
+        ArrayList<Object> returnList;
         //When
-        ArrayList<Object> returnList = familyTree.instantiateClassHierarchy();
+        returnList = familyTree.instantiateClassHierarchy();
         //Then
         Assert.assertEquals("Method is not returning the right value", expectedList, returnList);
     }
