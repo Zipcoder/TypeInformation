@@ -78,32 +78,34 @@ public class TestFamilyTree{
     }*/
 
     @Test
-    public void testInstantiateClassHierarchyReturnType() throws ClassNotFoundException {
+    public void testInstantiateClassHierarchyReturnType() throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException {
         //Given
-        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.AbstractList"));
-        Class expectedReturnType = String.class;
+        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.ArrayList"));
+        Class expectedReturnType = ArrayList.class;
         //When
-        Class returnType = familyTree.getClassHierarchy().getClass();
+        Class returnType = familyTree.instantiateClassHierarchy().getClass();
         //Then
         Assert.assertEquals("Method is returning the wrong data type", expectedReturnType, returnType);
     }
 
     @Test
-    public void testInstantiateClassHierarchy() throws ClassNotFoundException {
+    public void testInstantiateClassHierarchy() throws ClassNotFoundException, IllegalAccessException, InstantiationException, NoSuchMethodException {
         //Given
-        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.AbstractList"));
-        ArrayList item1;
-        AbstractList item2;
-        AbstractCollection item3;
-        Object item4;
-        Object[] expectedList = new Object[4];
-        expectedList[0] = item1;
-        expectedList[1] = null;
+        FamilyTree familyTree = new FamilyTree(Class.forName("java.util.ArrayList"));
+        ArrayList<Object> expectedList = new ArrayList<Object>();
+        Object element1 = ArrayList.class.newInstance();
+        Object element2 = null;
+        Object element3 = null;
+        Object element4 = Object.class.newInstance();
+        expectedList.add(element4);
+        expectedList.add(element3);
+        expectedList.add(element2);
+        expectedList.add(element1);
 
         //When
-        Object[]
+        ArrayList<Object> returnList = familyTree.instantiateClassHierarchy();
         //Then
-        Assert.assertEquals("Method is not returning the right value", expectedValue, returnValue);
+        Assert.assertEquals("Method is not returning the right value", expectedList, returnList);
     }
 
 }
