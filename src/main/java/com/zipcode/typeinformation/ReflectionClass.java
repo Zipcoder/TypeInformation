@@ -21,6 +21,7 @@ public class ReflectionClass {
         return false;
     }
 
+
  public String listAllMembers(Object object) {
 
      Field[] fields = object.getClass().getFields();
