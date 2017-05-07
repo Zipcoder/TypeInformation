@@ -2,6 +2,8 @@ package com.zipcode.typeinformation;
 
 import org.junit.Test;
 
+import java.util.ArrayList;
+
 import static org.junit.Assert.assertEquals;
 import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertTrue;
@@ -10,6 +12,25 @@ import static org.junit.Assert.assertTrue;
  * Created by vidyachandasekhar on 5/7/17.
  */
 public class ReflectionClassTest {
+    @Test
+    public void getClassHierarchy() throws Exception {
+        //given
+
+        ReflectionClass reflectionClass = new ReflectionClass();
+        Object alist = new ArrayList<Dog>();
+
+        //when
+        String result = reflectionClass.getClassHierarchy(alist);
+        //then
+        String exptected ="java.util.ArrayList\n" +
+                "java.util.AbstractList\n" +
+                "java.util.AbstractCollection\n" +
+                "java.lang.Object";
+        assertEquals(exptected ,result) ;
+
+
+    }
+
     @Test
     public void listAllMembers() throws Exception {
         //given
