@@ -6,21 +6,23 @@ import java.util.ArrayList;
  */
 public class Result {
 
-    private ArrayList<String> results;
+    String methodName;
+    String result;
 
-    public Result(){
-        results = new ArrayList<String>();
+    public Result(String methodName, String result) {
+        this.methodName = methodName;
+        this.result = result;
     }
 
-    public ArrayList<String> getResults() {
-        return results;
+    public String getResult() {
+        return result;
     }
 
-    public void addResult(String s){
-        results.add(s);
+    public String getMethodName() {
+        return methodName;
     }
 
-    public void displayResults(){
-        System.out.println(results);
+    public String toString() {
+        return "Test result of " + methodName + ": " + result + ".\n";
     }
 }
