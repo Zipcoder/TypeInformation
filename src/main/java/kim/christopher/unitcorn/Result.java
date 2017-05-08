@@ -2,26 +2,23 @@ package kim.christopher.unitcorn;
 
 public class Result {
 
-    boolean wasSuccessful;
+    boolean successful;
     String message;
 
 
     public Result(){
-        wasSuccessful = false;
+        successful = false;
         message = "";
     }
 
     public Result(boolean success, String message){
-        wasSuccessful = success;
+        this.successful = success;
         this.message = message;
     }
 
-    public void setWasSuccessful(boolean wasSuccessful){
-        this.wasSuccessful = wasSuccessful;
-    }
 
-    public boolean isWasSuccessful() {
-        return wasSuccessful;
+    public boolean isSuccessful() {
+        return successful;
     }
 
     public String getMessage() {

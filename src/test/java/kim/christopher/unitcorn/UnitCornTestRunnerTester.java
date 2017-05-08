@@ -5,8 +5,6 @@ import org.junit.Test;
 import static org.junit.Assert.*;
 
 import java.lang.reflect.Method;
-import java.util.ArrayList;
-import java.util.Arrays;
 
 public class UnitCornTestRunnerTester {
 
@@ -35,7 +33,7 @@ public class UnitCornTestRunnerTester {
     }
 
     @Test
-    public void InstantiateClassTest(){
+    public void instantiateClassTest(){
 
         //: Given
         c = String.class;
@@ -51,7 +49,7 @@ public class UnitCornTestRunnerTester {
     }
 
     @Test
-    public void InstantiateClassFailTest(){
+    public void instantiateClassFailTest(){
 
         //: When
         Object expectedObject = runner.instantiateClass(c);
@@ -61,14 +59,29 @@ public class UnitCornTestRunnerTester {
     }
 
     @Test
-    public void runTestTest(){
-
-        //: Given
-
+    public void runTestPassTest(){
         //: When
+        Result result = runner.runTest(UnitCornTestRunnerTester.class, "public void UnitCornTestRunnerTester.instantiateClassTest()");
+        boolean actualPass = result.isSuccessful();
+        String actualMessage = result.getMessage();
+        String expectedMessage = "PASS";
 
         //: Then
+        assertTrue(actualPass);
+        assertEquals(expectedMessage, actualMessage);
+    }
 
+    @Test
+    public void runTestFailTest(){
+        //: When
+        Result result = runner.runTest(UnitCornTestRunnerTester.class, "public void UnitCornTestRunnerTester.instantiateClassFailTest()");
+        boolean actualPass = result.isSuccessful();
+        String actualMessage = result.getMessage();
+        String expectedMessage = "FAIL";
+
+        //: Then
+        assertTrue(!actualPass);
+        assertEquals(expectedMessage, actualMessage);
     }
 
     @Test
