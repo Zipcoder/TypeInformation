@@ -1,5 +1,6 @@
 package kim.christopher.unitcorn;
 
+import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
 public class UnitCornTestRunner {
@@ -7,8 +8,20 @@ public class UnitCornTestRunner {
     public Result runTest(Class c, String methodName){
         Method m = getMethod(c, methodName);
         Object o = instantiateClass(c);
-        Result result = new Result();
-        return new Result();
+        Result r = new Result();
+        try{
+            Object returnedObject = m.invoke(o);
+            r.setSuccessful(true);
+            r.setMessage(returnedObject.getClass().getName());
+        } catch (IllegalAccessException e){
+            r.setSuccessful(false);
+            r.setMessage(e.getMessage());
+        } catch (InvocationTargetException f){
+            r.setSuccessful(false);
+            r.setMessage(f.getMessage());
+        }
+
+        return r;
     }
 
     //used in runTest

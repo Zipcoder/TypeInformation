@@ -2,8 +2,8 @@ package kim.christopher.unitcorn;
 
 public class Result {
 
-    boolean successful;
-    String message;
+    private boolean successful;
+    private String message;
 
 
     public Result(){
@@ -21,7 +21,15 @@ public class Result {
         return successful;
     }
 
+    public void setSuccessful(boolean b){
+        this.successful = b;
+    }
+
     public String getMessage() {
         return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
     }
 }

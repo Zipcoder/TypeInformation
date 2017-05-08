@@ -61,7 +61,7 @@ public class UnitCornTestRunnerTester {
     @Test
     public void runTestPassTest(){
         //: When
-        Result result = runner.runTest(UnitCornTestRunnerTester.class, "public void UnitCornTestRunnerTester.instantiateClassTest()");
+        Result result = runner.runTest(UnitCornTestRunnerTester.class, "");
         boolean actualPass = result.isSuccessful();
         String actualMessage = result.getMessage();
         String expectedMessage = "PASS";
