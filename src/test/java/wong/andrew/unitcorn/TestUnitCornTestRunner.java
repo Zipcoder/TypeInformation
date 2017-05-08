@@ -64,7 +64,15 @@ public class TestUnitCornTestRunner {
     @Test
     public void runTests_ClassExists_ReportReturned(){
         //Arrange
+        UnitCornTestRunner unitCorn = new UnitCornTestRunner();
+        Class c = TestDummyClass.class;
+        String expectedReport;
+        expectedReport = "dummyMethodOne_True_ReturnsTrue: pass\ndummyMethodTwo_Zero_ReturnsZero: pass\n";
+
         //Act
+        String actualReport = unitCorn.runTests(c);
+
         //Assert
+        assertEquals(expectedReport.trim(), actualReport.trim());
     }
 }
